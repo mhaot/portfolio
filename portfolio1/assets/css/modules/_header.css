@@ -1,0 +1,23 @@
+@media (max-width: 320px) {
+.l-header {
+
+    &__top {
+        height: 50px;
+        background-color: #686260;
+        z-index: 1;
+    }
+
+    &__bottom {
+        height: 90px;
+    }
+
+    &__nav {
+        height: 90px;
+        span {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    }
+}

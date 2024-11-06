@@ -1,8 +1,12 @@
 /* title.img.など汎用的に使う要素を定義 */
 
-.c-title__10 {
-    font-size: 10px;
+.c-title__25 {
+    font-size: 25px;
 }
+.c-title__22 {
+    font-size: 22px;
+}
+
 
 .c-fs__10 {
     font-size: 10px;

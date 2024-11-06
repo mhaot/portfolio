@@ -1,0 +1,25 @@
+/* 全体に共通する基本スタイル */
+body {
+    font-size: 13px; /* デフォルトのフォントサイズ */
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 0.48px;
+    background-color: #F5F3ED;
+    font-family: "Noto Sans JP", "system-ui", -apple-system, BlinkMacSystemFont, sans-serif;    font-weight: 400;
+}
+
+
+/* 320px以下の画面用のメディアクエリ */
+@media (max-width: 320px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+/* 1280px以上の画面用のメディアクエリ */
+@media (min-width: 1280px) {
+    body {
+        font-size: 13px;
+    }
+}
