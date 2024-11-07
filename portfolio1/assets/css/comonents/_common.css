@@ -1,0 +1,118 @@
+/* title.img.など汎用的に使う要素を定義 */
+
+.c-title__25 {
+    font-size: 25px;
+}
+.c-title__22 {
+    font-size: 22px;
+}
+
+
+.c-fs__10 {
+    font-size: 10px;
+}
+
+.c-fs__11 {
+    font-size: 11px;
+}
+
+.c-fs__12 {
+    font-size: 12px;
+}
+
+.c-fs__13 {
+    font-size: 13px;
+}
+
+.c-fs__14 {
+    font-size: 14px;
+}
+
+.c-fs__15 {
+    font-size: 15px;
+}
+
+.c-fs__16 {
+    font-size: 16px;
+}
+
+.c-fs__17 {
+    font-size: 17px;
+
+}.c-fs__18 {
+    font-size: 18px;
+}
+
+.c-fs__18 {
+    font-size: 18px;
+}
+
+.icon-blank { /* 外部アイコン<i class="icon-blank"></i> */
+        display: inline-block;
+        box-sizing: border-box;
+        position: relative;
+        width: 20px;
+        height: 16px;
+}
+.icon-blank:before,
+.icon-blank:after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-style: solid;
+        border-color: var(--icon-color);
+}
+.icon-blank:before {
+        top: 0;
+        left: 0;
+        border-width: var(--icon-width);
+}
+.icon-blank:after {
+        top: 6px;
+        left: 6px;
+        border-width: 0 var(--icon-width) var(--icon-width) 0;
+}
+
+
+
+.dli-clone { /* 外部アイコン<i class="dli-clone"></i> */
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    width: 0.9em;
+    height: 0.9em;
+    border: 0.1em solid currentColor;
+    border-radius: 0.1em;
+    background: #fff;
+    box-sizing: content-box;
+    position: relative;
+    box-shadow: -0.2em 0.2em 0 -0.1em #fff, -0.2em 0.2em 0 0 currentColor;
+}
+
+
+
+
+.stickarrow { /* 矢印垂直<i class="stickarrow"></i> */
+    width: 40px;
+    height: 8px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: skew(45deg);
+}
+
+.dli-chevron-down { /* 矢印down<i class="dli-chevron-down"></i> */
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    width: 1em;
+    height: 1em;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+}
