@@ -1,10 +1,10 @@
-/* Foundation */
-@import url('foundation/_reset.css');
-@import url('foundation/_base.css');
+/* base */
+@import url('base/_reset.css');
+@import url('base/_base.css');
 
-/* Object */
-@import url('object/_common.css');
-@import url('object/_utility.css');
+/* components */
+@import url('components/_common.css');
+@import url('components/_utility.css');
 
 /* Layout */
 @import url('layout/_header.css');
@@ -19,3 +19,26 @@
 @import url('layout/_footer.css');
 @import url('layout/_jquery.css');
 
+assets/
+├── css/
+│ ├── base/
+│ │ ├── _reset.css
+│ │ └── _base.css
+│ ├── layout/
+│ │ ├── _header.css
+│ │ ├── _main.css
+│ │ ├── _carousel.css
+│ │ ├── _product.css
+│ │ ├── _about.css
+│ │ ├── _news.css
+│ │ ├── _stores-section-online.css
+│ │ ├── _memberships.css
+│ │ ├── _instagram.css
+│ │ ├── _footer.css
+│ │ └── _jquery.css
+│ ├── components/
+│ │ ├── _common.css
+│ │ └── _utility.css
+│ └── style.css
+├── images/
+└── index.html
