@@ -1,4 +1,32 @@
 /* title.img.など汎用的に使う要素を定義 */
+.c-deco__line {
+    position: absolute;
+    height: 2px;
+    width: 30px;
+    color: #000;
+    transition: all 0.4s ease-in-out;
+    border-radius: 1px;
+}
+
+.c-deco__line:nth-of-type(1) {
+    top: 10px;
+}
+
+.c-deco__line:nth-of-type(2) {
+bottom: 10px;
+}
+.c-deco__line.active :nth-of-type(1) {
+transform: translateY(4px) rotate(-45deg);
+}
+.c-deco__line.active :nth-of-type(2) {
+transform: translateY(-4px) rotate(45deg);
+}
+.c-deco__line.backcolor {
+background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
 
 .c-title__25 {
     font-size: 25px;
@@ -20,10 +48,6 @@
     font-size: 12px;
 }
 
-.c-fs__13 {
-    font-size: 13px;
-}
-
 .c-fs__14 {
     font-size: 14px;
 }
@@ -40,10 +64,6 @@
     font-size: 17px;
 
 }.c-fs__18 {
-    font-size: 18px;
-}
-
-.c-fs__18 {
     font-size: 18px;
 }
 
