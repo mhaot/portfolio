@@ -1,4 +1,15 @@
+@import url('../modules/_reset.css');
 @import url('../modules/_base.css');
+
+
+/* modules */
 @import url('../modules/_header.css');
 @import url('../modules/_main.css');
+@import url('../modules/_carousel.css');
+@import url('../modules/_products.css');
+@import url('../modules/_about.css');
+@import url('../modules/_news.css');
+@import url('../modules/_stores-section-online.css');
+@import url('../modules/_membersships.css');
+@import url('../modules/_instagram.css');
 @import url('../modules/_footer.css');
