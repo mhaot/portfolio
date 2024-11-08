@@ -1,5 +1,5 @@
 /* title.img.など汎用的に使う要素を定義 */
-.c-deco__line {
+/* .c-deco__line {
     position: absolute;
     height: 2px;
     width: 30px;
@@ -24,7 +24,7 @@ transform: translateY(-4px) rotate(45deg);
 .c-deco__line.backcolor {
 background-color: rgba(0, 0, 0, 0.8);
 }
-
+ */
 
 
 
