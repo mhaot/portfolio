@@ -17,4 +17,129 @@
         cursor: pointer;
     }
 
+/* ===========================
+
+.l-header__bottom {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+.l-header__title {
+  display: inline-block;
+}
+/* ===========================
+  .drawer_btn
+  =========================== */
+
+#drawer-toggle {
+  display: none;
+}
+.l-header__drawer-btn {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  z-index: 999;
+}
+.l-header__drawer-btn > span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 2rem;
+  height: 2px;
+  background-color: #000000;
+  transform: translateX(-50%);
+}
+.l-header__drawer-btn > span:first-child {
+  transform: translate(-50%, calc(-50% - 0.5rem));
+  transition: transform 0.3s ease;
+}
+.l-header__drawer-btn > span:nth-child(2) {
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+}
+.l-header__drawer-btn > span:last-child {
+  transform: translate(-50%, calc(-50% + 0.5rem));
+  transition: transform 0.3s ease;
+}
+#drawer-toggle:checked + .drawer_btn > span:first-child {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+#drawer-toggle:checked + .drawer_btn > span:nth-child(2) {
+  opacity: 0;
+}
+#drawer-toggle:checked + .drawer_btn > span:last-child {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+/* ===========================
+  .drawer_nav
+  =========================== */
+.drawer_nav {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  transition: right 0.3s ease;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: right 0.3s ease;
+}
+#drawer-toggle:checked + .drawer_btn + .drawer_nav {
+  left 0;
+}
+.drawer_nav_inner {
+  width: 33vw;
+  height: 100%;
+  background-color: #F5F3ED;
+  padding: 4rem 1rem;
+  margin: 0 0 0 auto;
+  overflow: scroll;
+}
+.drawer_nav_menu {
+  display: grid;
+  list-style: none;
+  padding: 0;
+}
+.drawer_nav_link {
+  display: block;
+  color: #000000;
+  text-decoration: none;
+  padding: 1.5rem 1rem;
+  border-bottom: solid 1px #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 }
