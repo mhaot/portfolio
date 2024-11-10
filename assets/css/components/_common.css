@@ -20,14 +20,32 @@
         padding: 8px;
     }
 
+
+.c-title__40 {
+    font-size: 40px;
+    /* font-family: 'Basel', sans-serif; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    letter-spacing: 0.05em;
+}
+
 .c-title__22 {
     font-size: 22px;
     /* font-family: 'Basel', sans-serif; */
     font-family: "Roboto", sans-serif;
     font-weight: 450;
     letter-spacing: 0.05em;
+}
+
+.c-title__13 {
+    font-size: 13px;
+    /* font-family: 'Basel', sans-serif; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    letter-spacing: 0.05em;
 
 }
+
 .c-title__20 {
     font-size: 20px;
     /* font-family: 'Basel', sans-serif; */
