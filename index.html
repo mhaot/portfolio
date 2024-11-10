@@ -4,154 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio1</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <header class="l-header">
     <div class="l-header__top">
-      <p></p>
+      <!-- <p>生産終了商品のお知らせ</p>
+      <p>全国のBAUM店舗にて、販売スタッフ募集中</p>
+      <p>店頭で新スキンケア サンプルお渡し中 対象店はこちら</p>
+      <p>生産終了商品のお知らせ</p>
+      <p>全国のBAUM店舗にて、販売スタッフ募集中</p> -->
     </div>
     <div class="l-header__bottom">
-      <input type="checkbox" id="drawer-toggle" />
-      <label for="drawer-toggle" class="l-header__drawer-btn">
-        <span></span>
-        <span></span>
-      </label>
-      <nav class="l-drawer">
-        <div class="l-drawer__inner">
-            <div class="l-drawer__top">
-              <h2 class="c-title">BOSC</h2>
-            </div>
-          <ul class="l-drawer_nav_menu">
-            <li class="l-drawer_nav_item">
-              <a class="l-drawer_nav_link" href="">
-                <p class="c-fs__16">PRODUCTS</p>
-                <p class="c-fs__14">商品情報</p>
-              </a>
-              <i class="c-chevronDown"></i>
-            </li>
-            <li class="l-drawer_nav_item">
-              <a class="l-drawer_nav_link" href="">
-                <p class="c-fs__16">NEWS</p>
-                <p class="c-fs__14">ニュース</p>
+      <!-- <div class="l-header__bottomInner"> -->
+        <input type="checkbox" id="drawer-toggle" />
+        <label for="drawer-toggle" class="l-header__drawer-btn">
+          <i class="c-deco__line"></i>
+          <i class="c-deco__line"></i>
+        </label>
+        <a href="#">
+          <h1 class="l-header__title c-title__22">BOSC</h1>
+        </a>
+      <!-- </div> -->
+      <div class="l-header__drawer">
+        <div class="l-header__drawerInner">
+            <h2 class="l-header__drawerTitle c-title__22">BOSC</h2>
+            <ul class="l-header__drawerNav--toc">
+              <li class="l-header__drawerNav--tocItem">
+                <a href="#">
+                  <p class="c-title__16">PRODUCTS</p>
+                  <p class="c-fs__10">商品情報</p>
                 </a>
-            </li>
-            <li class="l-drawer_nav_item">
-              <a class="l-drawer_nav_link" href="">
-                <p class="c-fs__16">STORE/ONLINE</p>
-                <p class="c-fs__14">店舗/オンライン</p>
+                <i class="c-chevronDown"></i>
+              </li>
+              <li class="l-header__drawerNav--tocItem">
+                <a href="#">
+                  <p class="c-title__16">NEWS</p>
+                  <p class="c-fs__10">ニュース</p>
+                  </a>
+              </li>
+              <li class="l-header__drawerNav--tocItem">
+                <a href="#">
+                  <p class="c-title__16">STORE/ONLINE</p>
+                  <p class="c-fs__10">店舗/オンライン</p>
                 </a>
-            </li>
-            <li class="l-drawer_nav_item">
-              <a class="l-drawer_nav_link" href="">
-                <p class="c-fs__16">BOSC TREEDAY 2024</p>
-                <p class="c-fs__14">BOSCとひのきの森の、美しい循環</p>
+              </li>
+              <li class="l-header__drawerNav--tocItem">
+                <a href="#">
+                  <p class="c-title__16">BOSC TREEDAY 2024</p>
+                  <p class="c-fs__10">BOSCとひのきの森の、美しい循環</p>
+                  </a>
+              </li>
+              <li class="l-header__drawerNav--tocItem">
+                <a href="#">
+                  <p class="c-title__16">SKINCARE RENEWAL</p>
+                  <p class="c-fs__10">スキンケア商品リニューアル</p>
+                  </a>
+              </li>
+              <li class="l-header__drawerNav--tocItem">
+                <a href="#">
+                  <p class="c-title__16">ABOUT US</p>
+                  <p class="c-fs__10">BOSCについて</p>
                 </a>
-            </li>
-            <li class="l-drawer_nav_item">
-              <a class="l-drawer_nav_link" href="">
-                <p class="c-fs__16">SKINCARE RENEWAL</p>
-                <p class="c-fs__14">スキンケア商品リニューアル</p>
+                <i class="c-chevronDown"></i>
+              </li>
+              <li class="l-header__drawerNav--tocItem">
+                <a href="#">
+                  <p class="c-title__16">BOSC MEMBERSSHIP</p>
+                  <p class="c-fs__10"></p>
                 </a>
-            </li>
-            <li class="l-drawer_nav_item">
-              <a class="l-drawer_nav_link" href="">
-                <p class="c-fs__16">ABOUT US</p>
-                <p class="c-fs__14">BOSCについて</p>
-              </a>
-              <i class="c-chevronDown"></i>
-            </li>
-            <li class="l-drawer_nav_item">
-              <a class="l-drawer_nav_link" href="">
-                <p class="c-fs__16">BOSC MEMBERSSHIP</p>
-                <p class="c-fs__14"></p>
-              </a>
-            </li>
-          </ul>
+              </li>
+            </ul>
+          <div class="l-header__drawerBtns c-fs__12">
+            <button class="c-btn__square--login" onclick="location.href='#'">ログイン</button>
+            <button class="c-btn__square" onclick="location.href='#'">新規メンバー登録</button>
+          </div>
+          <div class="l-header__drawerBottom c-fs__14">
+            <ul class="l-header__drawerNav--sns">
+              <li class="c-sns__instagram">
+                <a href="#">instagram</a>
+              </li>
+              <li class="c-sns__X" >
+                <a href="#">X</a>
+              </li>
+              <li class="c-sns__youtube">
+                <a href="#">youtube</a>
+              </li>
+            </ul>
+            <ul class="l-header__drawerNav--info">
+              <li class="c-info__faq" >
+                <a href="#">FAQ</a>
+              </li>
+              <li class="c-info__contact" >
+                <a href="#">お問い合わせ</a>
+              </li>
+              <li class="c-info__careers" >
+                <a href="#">採用情報</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
-      <a href="#">
-        <h1 class="l-header__title c-title__25">BOSC</h1>
-      </a>
-    </div>
-    <!-- <div class="l-header-sidemenu">
-      <nav class="l-header-sidemenu__toc">
-        <ul class="c-toc__list">
-          <li class="c-toc__item">
-            <a href="">
-              <p class="c-fs__16">PRODUCTS</p>
-              <p class="c-fs__14">商品情報</p>
-              <button class="c-btn__down"></button>
-            </a>
-          </li>
-          <li class="c-toc__item">
-            <a href="#">
-              <p class="c-fs__16">NEWS</p>
-              <p class="c-fs__14">ニュース</p>
-            </a>
-          </li>
-          <li class="c-toc__item">
-            <a href="#">
-              <p class="c-fs__16">STORE/ONLINE</p>
-              <p class="c-fs__14">店舗/オンライン</p>
-            </a>
-          </li>
-          <li class="c-toc__item">
-            <a href="#">
-              <p class="c-fs__16">BOSC TREEDAY 2024</p>
-              <p class="c-fs__14">BOSCとひのきの森の、美しい循環</p>
-            </a>
-          </li>
-          <li class="c-toc__item">
-            <a href="#">
-              <p class="c-fs__16">SKINCARE RENEWAL</p>
-              <p class="c-fs__14">スキンケア商品リニューアル</p>
-          </a>
-          </li>
-          <li class="c-toc__item">
-            <a href="#">
-              <p class="c-fs__16">ABOUT US</p>
-              <p class="c-fs__14">BOSCについて</p>
-              <button class="c-btn__down"></button>
-            </a>
-          </li>
-          <li class="c-toc__item">
-            <a href="#">
-              <p class="c-fs__16">BOSC MEMBERSSHIP</p>
-              <p class="c-fs__14"></p>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <div class="l-header-sidemenu__btns">
-        <button class="c-btn__squere">ログイン</button>
-        <button class="c-btn__squere">新規メンバー登録</button>
       </div>
-      <nav class="l-header-sidemenu__nav">
-        <ul class="c-sns__nav">
-          <li>
-            <a class="c-sns__nav--instagram" href="#">instagram</a>
-          </li>
-          <li>
-            <a class="c-sns__nav--X" href="#">X</a>
-          </li>
-          <li>
-            <a class="c-sns__nav--youtube" href="#">youtube</a>
-          </li>
-        </ul>
-        <ul class="c-nav__list">
-          <li>
-            <a class="c-nav__item--faq" href="#">FAQ</a>
-          </li>
-          <li>
-            <a class="c-nav__item" href="#">お問い合わせ</a>
-          </li>
-          <li>
-            <a class="c-nav__item" href="#"></a>
-          </li>
-        </ul>
-      </nav>
-    </div> -->
   </header>
 
   <main class="l-main">

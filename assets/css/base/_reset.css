@@ -1,51 +1,77 @@
-*,*::before,*::after{
+/* ベースのリセット */
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-html{
+html {
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
 
-body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    font-weight: normal;
+    margin: 0; /* 全ての要素の余白をリセット */
+    padding: 0; /* 全ての要素のパディングをリセット */
+}
+
+ul[role='list'], ol[role='list'] {
+    list-style: none;
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
     margin: 0;
 }
 
-ul[role='list'],ol[role='list']{
-    list-style: none;
-
+body {
+    min-height: 100vh;
+    line-height: 1.5;
+    font-size: 13px; /* 基本のフォントサイズを指定 */
 }
 
-body{
-    min-height:100vh;line-height: 1.5;
-}
-
-h1,h2,h3,h4,button,input,label{
+h1, h2, h3, h4, button, input, label {
+    font-weight: normal;
     line-height: 1.1;
+    font-size: inherit; /* 文字サイズを親要素から継承させる */
 }
 
-h1,h2,h3,h4{
-    text-wrap: balance;
+h1, h2, h3, h4 {
+    font-weight: normal;
+    font-size: inherit; /* ユーザーエージェントのフォントサイズ指定を無効化 */
+    text-wrap: balance; /* 長いテキストを均等に分ける */
 }
 
-a:not([class]){
+a:not([class]) {
     text-decoration-skip-ink: auto;
     color: currentColor;
 }
 
-img,picture{
-    max-width:100%;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+img, picture {
+    max-width: 100%;
     display: block;
 }
 
-input,button,textarea,select{
-    font: inherit;
+input, button, textarea, select {
+    font: inherit; /* フォントの継承 */
 }
-textarea:not([rows]){
+
+textarea:not([rows]) {
     min-height: 10em;
 }
 
-:target{
+:target {
     scroll-margin-block: 5ex;
+}
+button {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+    appearance: none;
 }
