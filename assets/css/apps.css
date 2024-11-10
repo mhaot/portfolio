@@ -9,7 +9,7 @@
 /* Layout */
 @import url('./layout/_header.css');
 @import url('./layout/_main.css');
-@import url('.layout/_carousel.css');
+@import url('./.layout/_carousel.css');
 @import url('./layout/_products.css');
 @import url('./layout/_about.css');
 @import url('./layout/_news.css');
