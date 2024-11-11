@@ -20,9 +20,8 @@
         padding: 8px;
     }
 
-
-.c-title__40 {
-    font-size: 40px;
+.c-title__50 {
+    font-size: 50px;
     /* font-family: 'Basel', sans-serif; */
     font-family: "Roboto", sans-serif;
     font-weight: 450;
@@ -36,6 +35,13 @@
     font-weight: 450;
     letter-spacing: 0.05em;
 }
+.c-title__20 {
+    font-size: 20px;
+    /* font-family: 'Basel', sans-serif; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    letter-spacing: 0.05em;
+}
 
 .c-title__13 {
     font-size: 13px;
@@ -43,29 +49,62 @@
     font-family: "Roboto", sans-serif;
     font-weight: 450;
     letter-spacing: 0.05em;
-
-}
-
-.c-title__20 {
-    font-size: 20px;
-    /* font-family: 'Basel', sans-serif; */
-    font-family: "Roboto", sans-serif;
-    font-weight: 450;
-    letter-spacing: 0.05em;
-
 }
 
 .c-title__16 {
     font-size: 16px;
-    font-family: 'Basel', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
 
+.c-title__15 {
+    font-size: 15px;
+    font-family:  "Montserrat", sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+
+}
+.c-fs__16 {
+    font-size: 16px;
 }
 
 
 
-.c-fs__10 {
-    font-size: 10px;
+
+
+
+
+
+
+
+
+
+
+.c-fs__19 {
+    font-size: 18px;
 }
+
+.c-fs__18 {
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .c-fs__11 {
     font-size: 11px;
@@ -83,15 +122,10 @@
     font-size: 15px;
 }
 
-.c-fs__16 {
-    font-size: 16px;
-}
 
 .c-fs__17 {
     font-size: 17px;
 
-}.c-fs__18 {
-    font-size: 18px;
 }
 
 .icon-blank { /* 外部アイコン<i class="icon-blank"></i> */

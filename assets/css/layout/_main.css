@@ -1,0 +1,12 @@
+@media (max-width: 320px) {
+
+.l-main__top--title {
+    text-align: center;
+    margin: 40px 70px 100px;
+
+}
+.l-main__top--title p {
+    white-space: pre-line;/* PC版は改行を無効に white-space: normal; */
+    margin-bottom: 10px;
+}
+}
