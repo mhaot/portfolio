@@ -1,23 +1,23 @@
 /* base */
-@import url('./base/_reset.css');
+@import url('../base/_reset.css');
 @import url('./base/_base.css');
 
 /* components */
-@import url('./components/_common.css');
-@import url('./components/_utility.css');
+@import url('../components/_common.css');
+@import url('../components/_utility.css');
 
 /* Layout */
-@import url('./layout/_header.css');
-@import url('./layout/_main.css');
-@import url('./layout/_carousel.css');
-@import url('./layout/_products.css');
-@import url('./layout/_about.css');
-@import url('./layout/_news.css');
-@import url('./layout/_stores-section-online.css');
-@import url('./layout/_memberships.css');
-@import url('./layout/_instagram.css');
-@import url('./layout/_footer.css');
-@import url('./layout/_jquery.css');
+@import url('../layout/_header.css');
+@import url('../layout/_main.css');
+@import url('../layout/_carousel.css');
+@import url('../layout/_products.css');
+@import url('../layout/_about.css');
+@import url('../layout/_news.css');
+@import url('../layout/_stores-section-online.css');
+@import url('../layout/_memberships.css');
+@import url('../layout/_instagram.css');
+@import url('../layout/_footer.css');
+@import url('../layout/_jquery.css');
 
 /* /assets/
 ├── /css/
