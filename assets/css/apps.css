@@ -7,7 +7,7 @@
 @import url('/portfolio/assets/css/components/_utility.css');
 
 /* Layout */
-@import url('/portfolio/assets/css/layout/_header.css');
+@import url('https://mhaot.github.io/portfolio/assets/css/layout/_header.css');
 @import url('/portfolio/assets/css/layout/_main.css');
 @import url('/portfolio/assets/css/layout/_carousel.css');
 @import url('/portfolio/assets/css/layout/_products.css');
