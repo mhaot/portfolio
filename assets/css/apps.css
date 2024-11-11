@@ -1,23 +1,23 @@
 /* base */
-@import url('/assets/css/base/_reset.css');
-@import url('/assets/css/base/_base.css');
+@import url('/portfolio/assets/css/base/_reset.css');
+@import url('/portfolio/assets/css/base/_base.css');
 
 /* components */
-@import url('/assets/css/components/_common.css');
-@import url('/assets/css/components/_utility.css');
+@import url('/portfolio/assets/css/components/_common.css');
+@import url('/portfolio/assets/css/components/_utility.css');
 
 /* Layout */
-@import url('/assets/css/layout/_header.css');
-@import url('/assets/css/layout/_main.css');
-@import url('/assets/css/layout/_carousel.css');
-@import url('/assets/css/layout/_products.css');
-@import url('/assets/css/layout/_about.css');
-@import url('/assets/css/layout/_news.css');
-@import url('/assets/css/layout/_stores-section-online.css');
-@import url('/assets/css/layout/_memberships.css');
-@import url('/assets/css/layout/_instagram.css');
-@import url('/assets/css/layout/_footer.css');
-@import url('/assets/css/layout/_jquery.css');
+@import url('/portfolio/assets/css/layout/_header.css');
+@import url('/portfolio/assets/css/layout/_main.css');
+@import url('/portfolio/assets/css/layout/_carousel.css');
+@import url('/portfolio/assets/css/layout/_products.css');
+@import url('/portfolio/assets/css/layout/_about.css');
+@import url('/portfolio/assets/css/layout/_news.css');
+@import url('/portfolio/assets/css/layout/_stores-section-online.css');
+@import url('/portfolio/assets/css/layout/_memberships.css');
+@import url('/portfolio/assets/css/layout/_instagram.css');
+@import url('/portfolio/assets/css/layout/_footer.css');
+@import url('/portfolio/assets/css/layout/_jquery.css');
 
 
 
