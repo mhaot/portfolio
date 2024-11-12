@@ -24,4 +24,6 @@
 
 // apps.js
 import { initHeader } from '/assets/js/header.js';
+import { initCarousel } from './carousel.js';
     initHeader();
+    initCarousel();

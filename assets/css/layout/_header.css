@@ -88,6 +88,7 @@
         width: 100vw;
         /* height: 100vh; */
         background-color: rgba(0, 0, 0, 0.8);
+        z-index: 9998;
     }
 
     #drawer-toggle:checked ~ .l-header__drawer {
@@ -102,6 +103,8 @@
         top: 0;
         right: 0;
         position: fixed;
+        z-index: 9999;
+
     }
 
     .l-header__drawerInner {

@@ -18,9 +18,17 @@
         img {
             border: 1px solid #000000;
         }
-    }
-}
 
+        /* p {
+            white-space: pre-wrap;
+        }
+
+        p::after {
+        content: "、\A";
+        white-space: pre;
+        }    } */
+}
+}
 /* 1280px以上の画面用のメディアクエリ */
 @media (min-width: 1280px) {
     body {

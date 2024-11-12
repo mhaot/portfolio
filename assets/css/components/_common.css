@@ -1,4 +1,6 @@
 /* レスポンシブに対応できる共通パーツを定義 */
+
+/* 線 */
 .c-deco__line  {
     font-style: normal;
     width: 100%;
@@ -6,22 +8,202 @@
     background-color: #000000;
     }
 
-    .c-btn__square--login {
-        border: 1px solid #000000;
-        background-color: #000000;
-        color: #FFFFFF;
-        text-align: center;
-        padding: 8px;
+/* btn */
+.c-btn__square--login {
+    border: 1px solid #000000;
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 8px;
+}
+
+.c-btn__square {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px;
+}
+
+
+.c-btn__viewMore {
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #ffffff;
+    padding: 7px 20px;
+    font-size: 11px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.c-btn__indicator {
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    border: 0px;
+    cursor: pointer;
+    /* opacity: 0.4; */
+    transition: 400ms ease;
+    margin-right: 4px;
+    padding: 0;
+
+}
+
+
+/* slide */
+/* slide01 */
+.c-text__slides--present {
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    text-align: left;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* slide02 */
+.c-text__slides--forest {
+    position: absolute;
+    bottom: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(8, 137, 70, 1);
+}
+
+.c-text__slides--forest:nth-of-type(2) {
+    position: absolute;
+    min-width: 300px;
+    bottom: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    white-space: pre-line;
+    text-shadow: 0px 0px 4px rgba(8, 137, 70, 1);
+}
+/* slide03 */
+.c-text__slides--blooming {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.c-text__slides--blooming:nth-of-type(2) {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    line-height: 90%;
+}
+.c-text__slides--blooming:nth-of-type(3) {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+/* slide04 */
+.c-text__slides--mask {
+    color: #686260;
+    position: absolute;
+    min-width: 300px;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.c-text__slides--mask:nth-of-type(2) {
+    color: #686260;
+    position: absolute;
+    min-width: 300px;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 0.6em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    line-height: 90%;
+}
+.c-text__slides--mask:nth-of-type(3) {
+    color: #686260;
+    position: absolute;
+    min-width: 300px;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    letter-spacing: 0.6em;
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+/* slide05 */
+.c-text__slides--hinokiSkin {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+.c-text__slides--hinokiSkin:nth-of-type(2) {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 230px;
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    white-space: pre-line; /* PC版はwhite-space: normal;を記述し<br>を無効にできる */
+}
+/* slide06 */
+.c-text__slides--leaf {
+    white-space: pre-line; /* PC版はwhite-space: normal;を記述し<br>を無効にできる */
+    font-size: 22px;
+    font-family:  "Montserrat", sans-serif;
+    min-width: 320px;
+    font-weight: 600;
+    color: rgb(4, 111, 56);
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+/* img */
+    .c-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     }
 
-    .c-btn__square {
-        border: 1px solid #000000;
-        text-align: center;
-        padding: 8px;
-    }
 
+
+/* title font-weight */
 .c-title__50 {
     font-size: 50px;
+    /* font-family: 'Basel', sans-serif; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 450;
+    letter-spacing: 0.05em;
+}
+
+.c-title__25 {
+    font-size: 25px;
     /* font-family: 'Basel', sans-serif; */
     font-family: "Roboto", sans-serif;
     font-weight: 450;
@@ -64,69 +246,51 @@
     font-weight: 500;
 
 }
+
+/* font-size */
 .c-fs__16 {
     font-size: 16px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.c-fs__19 {
-    font-size: 18px;
-}
-
-.c-fs__18 {
-    font-size: 18px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.c-fs__11 {
-    font-size: 11px;
-}
-
-.c-fs__12 {
-    font-size: 12px;
-}
-
-.c-fs__14 {
-    font-size: 14px;
 }
 
 .c-fs__15 {
     font-size: 15px;
 }
 
+.c-fs__14 {
+    font-size: 14px;
+}
+.c-fs__11 {
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+.c-fs__20 {
+    font-size: 20px;
+}
+
+.c-fs__18 {
+    font-size: 18px;
+}
+.c-fs__12 {
+    font-size: 12px;
+}
+
+
+
 
 .c-fs__17 {
     font-size: 17px;
 
 }
+
 
 .icon-blank { /* 外部アイコン<i class="icon-blank"></i> */
     font-family: 'Basel', sans-serif;

@@ -26,7 +26,7 @@ ul, ol {
 
 body {
     min-height: 100vh;
-    line-height: 1.5;
+    line-height: 1.4;
     font-size: 13px; /* 基本のフォントサイズを指定 */
 }
 
@@ -74,4 +74,12 @@ button {
     border-radius: 0;
     box-shadow: none;
     appearance: none;
+    border: none;
 }
+
+p br {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+

@@ -46,4 +46,14 @@ export function initHeader() {
         generateDrawerNav(); // ドロワーリストを生成
         console.log('DOM読み込み確認');
     });
+
+
+
+// if (window.innerWidth <= 320) {
+//     document.querySelectorAll('p').forEach(p => {
+//         // 「、」があったら改行を追加
+//         p.innerHTML = p.innerHTML.replace(/、/g, '、<br>');
+//     });
+//     }
+
 }

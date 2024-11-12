@@ -6,7 +6,7 @@
 
 }
 .l-main__top--title p {
-    white-space: pre-line;/* PC版は改行を無効に white-space: normal; */
+    white-space: pre-line; /* PC版はwhite-space: normal;を記述し<br>を無効にできる */
     margin-bottom: 10px;
 }
 }
