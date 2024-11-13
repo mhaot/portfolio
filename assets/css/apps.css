@@ -8,7 +8,7 @@
 
 /* Layout */
 @import '/portfolio/assets/css/layout/_header.css';
-@import './layout/_main.css';
+@import '../../layout/_main.css';
 @import './layout/_carousel.css';
 @import './layout/_products.css';
 @import './layout/_about.css';
