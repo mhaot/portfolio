@@ -1,22 +1,22 @@
 /* base*/
-@import '../_reset.css';
-@import 'base/_base.css';
+@import './base/_reset.css';
+@import './base/_base.css';
 
 /* components */
-@import 'components/_common.css';
-@import 'components/_utility.css';
+@import './components/_common.css';
+@import './components/_utility.css';
 
 /* Layout */
-@import 'layout/_header.css';
-@import 'layout/_main.css';
-@import 'layout/_carousel.css';
-@import 'layout/_products.css';
-@import 'layout/_about.css';
-@import 'layout/_news.css';
-@import 'layout/_stores-section-online.css';
-@import 'layout/_memberships.css';
-@import 'layout/_instagram.css';
-@import 'layout/_footer.css';
+@import '/portfolio/assets/css/layout/_header.css';
+@import './layout/_main.css';
+@import './layout/_carousel.css';
+@import './layout/_products.css';
+@import './layout/_about.css';
+@import './layout/_news.css';
+@import './layout/_stores-section-online.css';
+@import './layout/_memberships.css';
+@import './layout/_instagram.css';
+@import './layout/_footer.css';
 
 /* @import url('/portfolio/assets/css/layout/_footer.css'); github pagesで公開する場合 */
 /* /assets/
