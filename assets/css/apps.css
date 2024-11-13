@@ -3,20 +3,20 @@
 @import 'assets/css/base/_base.css';
 
 /* components */
-@import './components/_common.css';
-@import './components/_utility.css';
+@import 'assets/css/components/_common.css';
+@import 'assets/css/components/_utility.css';
 
 /* Layout */
-@import '/portfolio/assets/css/layout/_header.css';
-@import './layout/_main.css';
-@import './layout/_carousel.css';
-@import './layout/_products.css';
-@import './layout/_about.css';
-@import './layout/_news.css';
-@import './layout/_stores-section-online.css';
-@import './layout/_memberships.css';
-@import './layout/_instagram.css';
-@import './layout/_footer.css';
+@import 'assets/css/layout/_header.css';
+@import 'assets/css/layout/_main.css';
+@import 'assets/css/layout/_carousel.css';
+@import 'assets/css/layout/_products.css';
+@import 'assets/css/layout/_about.css';
+@import 'assets/css/layout/_news.css';
+@import 'assets/css/layout/_stores-section-online.css';
+@import 'assets/css/layout/_memberships.css';
+@import 'assets/css/layout/_instagram.css';
+@import 'assets/css/layout/_footer.css';
 
 /* @import url('/portfolio/assets/css/layout/_footer.css'); github pagesで公開する場合 */
 /* /assets/
