@@ -3,7 +3,7 @@
 @import './base/_base.css';
 
 /* components */
-@import './components/_common.css';
+@import './css/components/_common.css';
 @import './components/_utility.css';
 
 /* Layout */
