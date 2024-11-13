@@ -9,8 +9,8 @@
 /* Layout */
 @import '/portfolio/assets/css/layout/_header.css';
 @import '../../layout/_main.css';
-@import './layout/_carousel.css';
-@import './layout/_products.css';
+@import 'portfolio/assets/css/layout/_carousel.css';
+@import 'assets/css/layout/_products.css';
 @import './layout/_about.css';
 @import './layout/_news.css';
 @import './layout/_stores-section-online.css';
