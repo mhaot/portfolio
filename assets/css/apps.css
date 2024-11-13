@@ -4,7 +4,7 @@
 
 /* components */
 @import './css/components/_common.css';
-@import './components/_utility.css';
+@import '../components/_utility.css';
 
 /* Layout */
 @import './layout/_header.css';
