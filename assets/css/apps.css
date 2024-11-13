@@ -1,22 +1,22 @@
-/* base css/*/
-@import url('css/base/_reset.css');
-@import url('css/base/_base.css');
+/* base*/
+@import url('./base/_reset.css');
+@import url('./base/_base.css');
 
 /* components */
-@import url('css/components/_common.css');
-@import url('css/components/_utility.css');
+@import url('./components/_common.css');
+@import url('./components/_utility.css');
 
 /* Layout */
-@import url('css/layout/_header.css');
-@import url('css/layout/_main.css');
-@import url('css/layout/_carousel.css');
-@import url('css/layout/_products.css');
-@import url('css/layout/_about.css');
-@import url('css/layout/_news.css');
-@import url('css/layout/_stores-section-online.css');
-@import url('css/layout/_memberships.css');
-@import url('css/layout/_instagram.css');
-@import url('css/layout/_footer.css');
+@import url('./layout/_header.css');
+@import url('./layout/_main.css');
+@import url('./layout/_carousel.css');
+@import url('./layout/_products.css');
+@import url('./layout/_about.css');
+@import url('./layout/_news.css');
+@import url('./layout/_stores-section-online.css');
+@import url('./layout/_memberships.css');
+@import url('./layout/_instagram.css');
+@import url('./layout/_footer.css');
 
 /* @import url('/portfolio/assets/css/layout/_footer.css'); github pagesで公開する場合 */
 /* /assets/
