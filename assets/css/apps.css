@@ -7,7 +7,7 @@
 @import '../components/_utility.css';
 
 /* Layout */
-@import './layout/_header.css';
+@import '/portfolio/assets/css/layout/_header.css';
 @import './layout/_main.css';
 @import './layout/_carousel.css';
 @import './layout/_products.css';
