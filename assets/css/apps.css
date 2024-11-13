@@ -11,7 +11,7 @@
 @import '../../layout/_main.css';
 @import 'portfolio/assets/css/layout/_carousel.css';
 @import 'assets/css/layout/_products.css';
-@import './layout/_about.css';
+@import './_about.css';
 @import './layout/_news.css';
 @import './layout/_stores-section-online.css';
 @import './layout/_memberships.css';
