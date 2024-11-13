@@ -1,6 +1,6 @@
 /* base*/
-@import './base/_reset.css';
-@import './base/_base.css';
+@import 'assets/css/base/_base.css';
+@import 'assets/css/base/_base.css';
 
 /* components */
 @import './components/_common.css';
