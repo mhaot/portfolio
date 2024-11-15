@@ -24,6 +24,9 @@ indicators.forEach((indicator, i) => { // インジケータークリック時
     indicator.addEventListener('click', () => {
         currentIndex = i;
         showSlide(currentIndex); // 選択したスライドを表示
+    indicators.forEach(ind => ind.classList.remove('active'));
+        indicator.classList.add(('active'));
     });
-});}
+});
+}
 
