@@ -27,7 +27,7 @@ export function initProducts() {
             listItem.classList.add('l-products__item');
 
             const anchor = document.createElement('a');
-            anchor.href = "#"; // 必要ならリンク先を指定
+            anchor.href = "#"; 
 
             const img = document.createElement('img');
             img.classList.add('c-img');
@@ -54,9 +54,8 @@ export function initProducts() {
         });
     }
 
-    // DOMが完全に読み込まれた後に実行
     document.addEventListener('DOMContentLoaded', () => {
-        generateProductMenu(); // メニューリストを生成
+        generateProductMenu(); 
         console.log('aboutDOM読み込み確認');
     });
 }
