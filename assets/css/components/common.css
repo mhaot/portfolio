@@ -146,11 +146,11 @@
 @keyframes pulseMotion {
     0% {
     transform: translate(-50%, -50%) scale(1, 1);
-    background-color: rgba(125, 124, 122, 0.4)
+    background-color: rgba(251, 249, 247, 0.7)
 }
 100% {
-    transform: translate(-50%, -50%) scale(6.5, 6.5);
-    background-color: rgba(39, 38, 37, 0)
+    transform: translate(-50%, -50%) scale(4.5, 4.5);
+    background-color: rgba(251, 249, 247, 0.2)
 }
 }
 
@@ -191,54 +191,6 @@ outline: none;
 .c-btn__indicator:active::after {
     animation: pulseMotion 1.4s linear infinite;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* slide */
 /* slide01 */
@@ -372,6 +324,41 @@ outline: none;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* products */
+.c-title__products:nth-of-type(2) {
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.c-title__products {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* about */
+.c-title__about:nth-of-type(2) {
+    color: #ffffff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.c-title__about {
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
 
 /* img */
     .c-img {
@@ -451,6 +438,15 @@ outline: none;
 .c-fs__11 {
     font-size: 11px;
 }
+.c-fs__10 {
+    font-size: 10px;
+}
+
+
+.c-fs__7 {
+    font-size: 7px;
+}
+
 
 
 

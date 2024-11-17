@@ -1,0 +1,64 @@
+@media (max-width: 320px) {
+
+
+    .l-about {
+        position: relative;
+        height: 470px;
+    }
+    
+    
+    .l-about__hero {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    
+    .l-about__hero img {
+        width: 293px;
+        height: 293px;
+    
+    }
+    
+    .l-about__hero picture p {
+        font-weight: normal;
+    }
+    
+    
+    .l-about__discription {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 240px;
+        height: 175px;
+        padding: 32px;
+        border: 1px solid #000000;
+        /* border: 1px solid transparent; */
+        /* border: none; */
+        line-height: 22px;
+    }
+    
+    /* .l-about__discription.scrolled {
+        width: 240px;
+        height: 225px;
+        padding: 32px;
+        /* border: 1px solid #000000;
+        box-sizing: border-box;
+    
+        border: 1px solid transparent;
+        animation: borderAnimation 1s forwards;
+    }
+    
+    @keyframes borderAnimation {
+        0% {
+        border-color: transparent;
+        }
+        100% {
+        border-color: #000000;
+        }
+        }
+    } */
+    
+    }
+    
+    
