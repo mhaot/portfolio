@@ -99,6 +99,23 @@
     margin-top: 12px;
 }
 
+.l-products__caption {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;    
+}
+
+.l-products__caption p,
+.l-products__caption i {
+    /* flex: 1 1 30%; */
+     /* margin: 0; */
+}
+
+.l-products__caption p:last-child {
+    flex: 1 1 100%;
+}
+
+
 
 
 }
