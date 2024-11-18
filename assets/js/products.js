@@ -12,15 +12,15 @@
 
 export function initProducts() {
     const productsMenuList = [
-        { img: "assets/images/product.menu01.jpg", text: "SKIN", subText: "スキンケア" },
-        { img: "assets/images/product.menu02.jpg", text: "MIND", subText: "フレグランス" },
-        { img: "assets/images/product.menu03.jpg", text: "HAND&BODY", subText: "ハンド＆ボディー" },
-        { img: "assets/images/product.menu04.jpg", text: "GOODS", subText: "グッズ" },
+        { img: "assets/images/product.menu01.jpg", text: "SKIN", subtext: "スキンケア" },
+        { img: "assets/images/product.menu02.jpg", text: "MIND", subtext: "フレグランス" },
+        { img: "assets/images/product.menu03.jpg", text: "HAND&BODY", subtext: "ハンド＆ボディー" },
+        { img: "assets/images/product.menu04.jpg", text: "GOODS", subtext: "グッズ" },
     ];
 
     function generateProductMenu() {
         const menuContainer = document.querySelector('.l-products__menu .l-products__list');
-        if (!menuContainer) return; // 念のため要素が存在するか確認
+        if (!menuContainer) return;
 
         productsMenuList.forEach(item => {
             const listItem = document.createElement('li');
@@ -40,12 +40,17 @@ export function initProducts() {
             const title = document.createElement('p');
             title.textContent = item.text;
 
-            const subtitle = document.createElement('p');
-            subtitle.classList.add('c-fs__10');
-            subtitle.textContent = item.subText;
+            const subTitle = document.createElement('p');
+            subTitle.classList.add('c-fs__10');
+            subTitle.textContent = item.subtext;
+
+            // <i class="c-deco__stickarrow"></i>
+            const stickArrow = document.createElement('i');
+            stickArrow.classList.add('c-deco__stickarrow');
 
             captionContainer.appendChild(title);
-            captionContainer.appendChild(subtitle);
+            captionContainer.appendChild(subTitle);
+            captionContainer.appendChild(stickArrow);
 
             anchor.appendChild(img);
             anchor.appendChild(captionContainer);
