@@ -75,6 +75,7 @@
     
 
 .l-products__list {
+    justify-content: space-between;
     padding: 0 0 120px;
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +87,6 @@
 }
     
 .l-products__item {
-    justify-content: space-between;
     /*  flex: 1 0 126px; */
 }
     
