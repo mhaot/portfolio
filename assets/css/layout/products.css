@@ -6,7 +6,7 @@
     /* flex-directtion: column; */
     /* justify-contenct: space-between; */
     display: grid;
-    grid-template: 1fr auto;
+    grid-template-rows: 1fr auto;
     position: relative;
     height: 100%;
 }
