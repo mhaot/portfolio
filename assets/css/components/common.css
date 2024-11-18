@@ -529,8 +529,10 @@ outline: none;
 
 .c-deco__stickarrow { /* 矢印垂直<i class="c-deco__stickarrow"></i> */
     font-family: 'Basel', sans-serif;
-    width: 40px;
-    height: 8px;
+    display: inline-block;
+    width: 19px;
+    height: 5px;
+    margin-left: 4px;
     border-bottom: 1px solid #000;
     border-right: 1px solid #000;
     transform: skew(45deg);
