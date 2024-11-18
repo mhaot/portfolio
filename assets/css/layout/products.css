@@ -97,12 +97,10 @@
 
 .l-products__caption {
     margin-top: 12px;
-}
-
-.l-products__caption {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;    
+    max-width: 126px;
+    align-items: center;
 }
 
 .l-products__caption p,
