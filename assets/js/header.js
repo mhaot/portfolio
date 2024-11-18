@@ -34,7 +34,7 @@ export function initHeader() {
 
             if (item.hasChevron) {
                 const chevronIcon = document.createElement('i');
-                chevronIcon.classList.add('c-chevronDown');
+                chevronIcon.classList.add('c-deco__chevronDown');
                 listItem.appendChild(chevronIcon);
             }
 
