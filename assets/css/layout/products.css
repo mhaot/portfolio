@@ -83,14 +83,15 @@
     width: 126px;
     height: 126px;
 }
+    
 .l-products__item {
-    flex: 1 0 126px;
+    /*  flex: 1 0 126px; */
 }
-
     
-
-    
-
+.l-products__item:nth-child(2n) {
+    margin-bottom: 40px;
+    padding-top: 32px;
+}
 
 }
 
