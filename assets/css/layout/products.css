@@ -86,6 +86,7 @@
 }
     
 .l-products__item {
+    justify-content: space-between;
     /*  flex: 1 0 126px; */
 }
     
