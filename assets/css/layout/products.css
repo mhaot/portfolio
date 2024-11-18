@@ -14,7 +14,6 @@
 
 
 .l-products__hero {
-    grid-row: 1;
     justify-self: end;
 }
 
@@ -38,7 +37,6 @@
 
 
 .l-products__discription {
-    grid-row: 2;
     justify-self: start;
     width: 240px;
     height: 360px;
@@ -76,7 +74,6 @@
 
 }
 .l-products__menu {
-    grid-row: 2;
     margin: 0 28px;
 }
     
