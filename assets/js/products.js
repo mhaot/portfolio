@@ -50,9 +50,9 @@ export function initProducts() {
             stickArrow.classList.add('c-deco__stickarrow');
 
             captionContainer.appendChild(title);
-            captionContainer.appendChild(subTitle);
             captionContainer.appendChild(stickArrow);
-
+            captionContainer.appendChild(subTitle);
+            
             anchor.appendChild(img);
             anchor.appendChild(captionContainer);
             listItem.appendChild(anchor);
