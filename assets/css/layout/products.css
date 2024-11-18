@@ -64,7 +64,22 @@
     margin-top: 24px;
 
 }
+.l-products__menu {
+    margin: 0 28px;
+}
+    
 
+.l-products__list {
+    padding: 0 0 120px;
+    display: grid;
+}
+    
+.l-products__list img {
+    width: 126px;
+    height: 126px;
+}
+
+    
 
 
 }
