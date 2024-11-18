@@ -16,6 +16,7 @@ export function initProducts() {
         { img: "assets/images/product.menu02.jpg", text: "MIND", subtext: "フレグランス" },
         { img: "assets/images/product.menu03.jpg", text: "HAND&BODY", subtext: "ハンド＆ボディー" },
         { img: "assets/images/product.menu04.jpg", text: "GOODS", subtext: "グッズ" },
+        { img: "assets/images/product.menu05.jpg", text: "GIFT", subtext: "ギフト" },
     ];
 
     function generateProductMenu() {
