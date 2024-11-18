@@ -28,7 +28,7 @@ export function initProducts() {
             listItem.classList.add('l-products__item');
 
             const anchor = document.createElement('a');
-            anchor.href = "#"; 
+            anchor.href = "#";
 
             const img = document.createElement('img');
             img.classList.add('c-img');
@@ -52,7 +52,7 @@ export function initProducts() {
             captionContainer.appendChild(title);
             captionContainer.appendChild(stickArrow);
             captionContainer.appendChild(subTitle);
-            
+
             anchor.appendChild(img);
             anchor.appendChild(captionContainer);
             listItem.appendChild(anchor);
@@ -61,8 +61,8 @@ export function initProducts() {
     }
 
     document.addEventListener('DOMContentLoaded', () => {
-        generateProductMenu(); 
-        console.log('aboutDOM読み込み確認');
+        generateProductMenu();
+        console.log('productDOM読み込み確認');
     });
 }
 

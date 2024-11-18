@@ -2,63 +2,93 @@
 
 
     .l-about {
+        display: grid;
         position: relative;
-        height: 470px;
+        height: 100%;
     }
-    
-    
+
+
     .l-about__hero {
-        position: absolute;
-        top: 0;
-        right: 0;
+        justify-self: end;
     }
-    
-    
-    .l-about__hero img {
-        width: 293px;
-        height: 293px;
-    
+
+    .l-about__hero picture {
+        position: relative;
     }
-    
+
     .l-about__hero picture p {
         font-weight: normal;
     }
-    
-    
-    .l-about__discription {
-        position: absolute;
-        bottom: 0;
-        left: 0;
+
+
+    .l-about__description {
+        justify-self: start;
         width: 240px;
         height: 175px;
         padding: 32px;
         border: 1px solid #000000;
         /* border: 1px solid transparent; */
         /* border: none; */
+        margin-bottom: 60px;
         line-height: 22px;
     }
-    
-    /* .l-about__discription.scrolled {
+
+    /* .l-about__description.scrolled {
         width: 240px;
         height: 225px;
         padding: 32px;
         /* border: 1px solid #000000;
         box-sizing: border-box;
-    
-        border: 1px solid transparent;
-        animation: borderAnimation 1s forwards;
-    }
-    
-    @keyframes borderAnimation {
+        /* margin-bottom: 60px; */
+        /* border: 1px solid transparent; */
+        /* animation: borderAnimation 1s forwards;
+        }*/
+
+
+    /* @keyframes borderAnimation {
         0% {
         border-color: transparent;
         }
         100% {
         border-color: #000000;
         }
-        }
     } */
-    
+
+    .l-about__menu {
+        margin: 0 28px;
     }
-    
-    
+
+
+    .l-about__list {
+        justify-content: space-between;
+        padding: 0 0 120px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .l-about__list img {
+        width: 126px;
+        height: 126px;
+    }
+
+    .l-about__item:nth-child(2n) {
+        margin-bottom: 40px;
+        padding-top: 32px;
+    }
+
+    .l-about__caption {
+        margin-top: 12px;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 126px;
+        align-items: center;
+    }
+
+    .l-about__caption p:last-child {
+        flex: 1 1 100%;
+    }
+
+
+
+    }
+
