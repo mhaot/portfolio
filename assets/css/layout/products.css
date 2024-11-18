@@ -71,13 +71,19 @@
 
 .l-products__list {
     padding: 0 0 120px;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
 }
     
 .l-products__list img {
     width: 126px;
     height: 126px;
 }
+.l-products__item {
+    flex: 1 0 126px;
+}
+
+    
 
     
 
