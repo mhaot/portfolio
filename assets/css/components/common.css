@@ -477,7 +477,7 @@ outline: none;
 }
 
 
-.icon-blank { /* 外部アイコン<i class="icon-blank"></i> */
+.c-deco__icon-blank { /* 外部アイコン<i class="icon-blank"></i> */
     font-family: 'Basel', sans-serif;
     display: inline-block;
     box-sizing: border-box;
@@ -485,8 +485,8 @@ outline: none;
     width: 20px;
     height: 16px;
 }
-.icon-blank:before,
-.icon-blank:after {
+.c-deco__icon-blank:before,
+.c-deco__icon-blank:after {
     content: "";
     box-sizing: border-box;
     position: absolute;
@@ -495,12 +495,12 @@ outline: none;
     border-style: solid;
     border-color: var(--icon-color);
 }
-.icon-blank:before {
+.c-deco__icon-blank:before {
     top: 0;
     left: 0;
     border-width: var(--icon-width);
 }
-.icon-blank:after {
+.c-deco__icon-blank:after {
     top: 6px;
     left: 6px;
     border-width: 0 var(--icon-width) var(--icon-width) 0;
@@ -508,7 +508,7 @@ outline: none;
 
 
 
-.dli-clone { /* 外部アイコン<i class="dli-clone"></i> */
+.c-deco__dli-clone { /* 外部アイコン<i class="dli-clone"></i> */
     font-family: 'Basel', sans-serif;
     display: inline-block;
     vertical-align: middle;
@@ -527,7 +527,7 @@ outline: none;
 
 
 
-.stickarrow { /* 矢印垂直<i class="stickarrow"></i> */
+.c-deco__stickarrow { /* 矢印垂直<i class="stickarrow"></i> */
     font-family: 'Basel', sans-serif;
     width: 40px;
     height: 8px;
@@ -536,7 +536,7 @@ outline: none;
     transform: skew(45deg);
 }
 
-    .c-chevronDown { /* 矢印down<i class="c-chevronDown"></i> */
+    .c-deco__chevronDown { /* 矢印down<i class="c-chevronDown"></i> */
     font-family: 'Basel', sans-serif;
     display: inline-block;
     vertical-align: middle;
