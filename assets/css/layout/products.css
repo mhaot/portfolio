@@ -2,12 +2,7 @@
 
 
 .l-products {
-    /* display: flex; */
-    /* flex-directtion: column; */
-    /* justify-contenct: space-between; */
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-rows: auto auto auto;
     position: relative;
     height: 100%;
 }
