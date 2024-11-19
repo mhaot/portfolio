@@ -79,10 +79,10 @@
         max-width: 126px;
         align-items: center;
     } */
-
-    .l-about__caption p:last-child {
-        flex: 1 1 100%;
-    }
+    
+    /* .l-about__caption p:last-child {
+    flex: 1 1 100%;
+    } */
 
 
 
