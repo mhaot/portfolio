@@ -22,6 +22,13 @@
             border: 1px solid #000000;
         }
 
+        picture {
+        position: relative;
+        }
+
+        picture p {
+        position: abusolute;
+        }
         /* p {
             white-space: pre-wrap;
         }
