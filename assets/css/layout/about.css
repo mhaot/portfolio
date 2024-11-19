@@ -12,11 +12,6 @@
         justify-self: end;
     }
 
-    .l-about__hero picture {
-     /* position: relative; */
-    }
-    
-
     .l-about__hero picture p {
         font-weight: normal;
     }
