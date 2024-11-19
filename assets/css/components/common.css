@@ -352,12 +352,12 @@ outline: none;
     }
     .c-img__mainTopHero {
         width: 293px;
-        width: 293px;
+        height: 293px;
         /* aspect-radio: 1 / 1; */
     }
 
     .c-img__mainSubHero {
-        height: 320px;
+        width: 320px;
         height: 320px;
         /* aspect-radio: 1 / 1; */
     }
