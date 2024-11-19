@@ -379,10 +379,11 @@ outline: none;
 }
 
 c-text__captionWithLink {
-    
+    padding: 8 0 0 20px;
+    width: calc(100% - 64px);
+    margin: 0px auto;
+    box-sizing: border-box;
 }
-
-
 
 /* img */
     .c-img {
