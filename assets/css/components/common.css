@@ -348,6 +348,10 @@ outline: none;
     align-items: center;
 }
 
+.c-text__caption p:last-child {
+    flex: 1 1 100%;
+}
+
 
 /* img */
     .c-img {
