@@ -1,0 +1,21 @@
+.l-instagram {
+    text-align: center;
+}
+
+
+.l-instagram__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 28px;
+}
+.l-instagram__title img {
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin: 0 auto 10px;
+
+}
+.l-instagram button {
+    margin: 40px 40px 0;
+}

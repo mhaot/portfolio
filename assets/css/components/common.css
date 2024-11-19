@@ -34,6 +34,43 @@
     transform: translateY(-25%) rotate(135deg);
 }
 
+.c-deco__circl {
+    height: 90px;
+    width: 90px;
+    border: none;
+}
+
+.c-deco__iconBlank { /* 外部アイコン<i class="c-deco__iconBlank"></i> */
+    font-family: 'Basel', sans-serif;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    margin-left: 8px;
+}
+.c-deco__iconBlank:before,
+.c-deco__iconBlank:after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-style: solid;
+    border-color: var(--icon-color);
+}
+.c-deco__iconBlank:before {
+    top: 0;
+    left: 0;
+    border-width: var(--icon-width);
+}
+.c-deco__iconBlank:after {
+    top: 6px;
+    left: 6px;
+    border-width: 0 var(--icon-width) var(--icon-width) 0;
+}
+
+
 /* btn */
 .c-btn__square--login {
     border: 1px solid #000000;
@@ -350,6 +387,8 @@ outline: none;
     text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* hero */
+
 .c-title__hero {
     color: #ffffff;
     font-weight: normal;
@@ -378,11 +417,23 @@ outline: none;
     flex: 1 1 100%;
 }
 
-c-text__captionWithLink {
-    padding: 8 0 0 20px;
+.c-text__captionWithLink {
+    position: relative;
+    padding: 8px 0 0 20px;
     width: calc(100% - 64px);
     margin: 0px auto;
     box-sizing: border-box;
+}
+.c-text__captionWithLink::before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1px;
+    height: 100%;
+    background-color: #000;
+    content: "";
+
 }
 
 /* img */
@@ -401,6 +452,7 @@ c-text__captionWithLink {
     .c-img__mainSubHero {
         width: 320px;
         height: 320px;
+        margin-bottom: 40px;
         /* aspect-radio: 1 / 1; */
     }
 
@@ -471,6 +523,10 @@ c-text__captionWithLink {
 .c-fs__14 {
     font-size: 14px;
 }
+.c-fs__12 {
+    font-size: 12px;
+}
+
 .c-fs__11 {
     font-size: 11px;
 }
@@ -512,50 +568,3 @@ c-text__captionWithLink {
 
 }
 
-
-.c-deco__icon-blank { /* 外部アイコン<i class="c-deco__icon-blank"></i> */
-    font-family: 'Basel', sans-serif;
-    display: inline-block;
-    box-sizing: border-box;
-    position: relative;
-    width: 20px;
-    height: 16px;
-}
-.c-deco__icon-blank:before,
-.c-deco__icon-blank:after {
-    content: "";
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-style: solid;
-    border-color: var(--icon-color);
-}
-.c-deco__icon-blank:before {
-    top: 0;
-    left: 0;
-    border-width: var(--icon-width);
-}
-.c-deco__icon-blank:after {
-    top: 6px;
-    left: 6px;
-    border-width: 0 var(--icon-width) var(--icon-width) 0;
-}
-
-
-
-.c-deco__dli-clone { /* 外部アイコン<i class="c-deco__dli-clone"></i> */
-    font-family: 'Basel', sans-serif;
-    display: inline-block;
-    vertical-align: middle;
-    color: #333;
-    line-height: 1;
-    width: 0.9em;
-    height: 0.9em;
-    border: 0.1em solid currentColor;
-    border-radius: 0.1em;
-    background: #fff;
-    box-sizing: content-box;
-    position: relative;
-    box-shadow: -0.2em 0.2em 0 -0.1em #fff, -0.2em 0.2em 0 0 currentColor;
-}
