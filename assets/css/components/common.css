@@ -340,7 +340,7 @@ outline: none;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.c-text__caption {
+.c-text__link {
     margin-top: 12px;
     display: flex;
     flex-wrap: wrap;
@@ -348,7 +348,7 @@ outline: none;
     align-items: center;
 }
 
-.c-text__caption p:last-child {
+.c-text__link p:last-child {
     flex: 1 1 100%;
 }
 
