@@ -1,12 +1,38 @@
 /* レスポンシブに対応できる共通パーツを定義 */
 
-/* 線 */
-.c-deco__line  {
+/* decoration */
+.c-deco__line  { /* 横線<i class="c-deco__line"></i> */
     font-style: normal;
     width: 100%;
     height: 1px;
     background-color: #000000;
     }
+
+.c-deco__stickarrow { /* link用、矢印垂直<i class="c-deco__stickarrow"></i> */
+    font-family: 'Basel', sans-serif;
+    display: inline-block;
+    width: 19px;
+    height: 5px;
+    margin-left: 4px;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    transform: skew(45deg);
+}
+
+    .c-deco__chevronDown { /* プルダウン用、矢印down<i class="c-deco__chevronDown"></i> */
+    font-family: 'Basel', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    color: #333;
+    line-height: 1;
+    width: 7px;
+    height: 7px;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+}
 
 /* btn */
 .c-btn__square--login {
@@ -352,6 +378,11 @@ outline: none;
     flex: 1 1 100%;
 }
 
+c-text__captionWithLink {
+    
+}
+
+
 
 /* img */
     .c-img {
@@ -526,31 +557,4 @@ outline: none;
     box-sizing: content-box;
     position: relative;
     box-shadow: -0.2em 0.2em 0 -0.1em #fff, -0.2em 0.2em 0 0 currentColor;
-}
-
-
-.c-deco__stickarrow { /* 矢印垂直<i class="c-deco__stickarrow"></i> */
-    font-family: 'Basel', sans-serif;
-    display: inline-block;
-    width: 19px;
-    height: 5px;
-    margin-left: 4px;
-    border-bottom: 1px solid #000;
-    border-right: 1px solid #000;
-    transform: skew(45deg);
-}
-
-    .c-deco__chevronDown { /* 矢印down<i class="c-deco__chevronDown"></i> */
-    font-family: 'Basel', sans-serif;
-    display: inline-block;
-    vertical-align: middle;
-    color: #333;
-    line-height: 1;
-    width: 7px;
-    height: 7px;
-    border: 0.1em solid currentColor;
-    border-left: 0;
-    border-bottom: 0;
-    box-sizing: border-box;
-    transform: translateY(-25%) rotate(135deg);
 }
