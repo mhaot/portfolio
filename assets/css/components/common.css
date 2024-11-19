@@ -348,15 +348,17 @@ outline: none;
         width: 100%;
         height: auto;
         object-fit: cover;
+        aspect-radio: 1 / 1;
     }
     .c-img__mainTopHero {
         width: 293px;
-        aspect-radio: 1 / 1;
+        height: auto;
+        /* aspect-radio: 1 / 1; */
     }
 
     .c-img__mainSubHero {
-        width: 100%;
-        aspect-radio: 1 / 1;
+        height: 320px;
+        /* aspect-radio: 1 / 1; */
     }
 
 
