@@ -340,7 +340,13 @@ outline: none;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.c-text__caption {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 126px;
+    align-items: center;
+}
 
 
 /* img */
