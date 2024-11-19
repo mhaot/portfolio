@@ -336,7 +336,7 @@ outline: none;
     color: #ffffff;
     font-weight: normal;
     position: absolute;
-    top: 60%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -437,8 +437,8 @@ outline: none;
 }
 
 
-.c-fs__7 {
-    font-size: 7px;
+.c-fs__8 {
+    font-size: 8px;
 }
 
 
