@@ -13,8 +13,9 @@
     }
 
     .l-about__hero picture {
-        position: relative;
+     /* position: relative; */
     }
+    
 
     .l-about__hero picture p {
         font-weight: normal;
