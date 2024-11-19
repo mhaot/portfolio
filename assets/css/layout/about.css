@@ -71,14 +71,14 @@
         margin-bottom: 40px;
         padding-top: 32px;
     }
-
-    .l-about__caption {
+    
+    /* .l-about__caption {
         margin-top: 12px;
         display: flex;
         flex-wrap: wrap;
         max-width: 126px;
         align-items: center;
-    }
+    } */
 
     .l-about__caption p:last-child {
         flex: 1 1 100%;
