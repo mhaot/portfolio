@@ -27,7 +27,7 @@ export function initAbout() {
             img.alt = item.text;
 
             const captionContainer = document.createElement('div');
-            captionContainer.classList.add('c-text__caption');
+            captionContainer.classList.add('c-text__link');
 
             const title = document.createElement('p');
             title.textContent = item.text;
