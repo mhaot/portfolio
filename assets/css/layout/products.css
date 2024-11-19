@@ -78,17 +78,17 @@
     padding-top: 32px;
 }
 
-.l-products__caption {
+/* .l-products__caption {
     margin-top: 12px;
     display: flex;
     flex-wrap: wrap;
     max-width: 126px;
     align-items: center;
-}
+} */
 
-.l-products__caption p:last-child {
+/* .l-products__caption p:last-child {
     flex: 1 1 100%;
-}
+} */
 
 
 
