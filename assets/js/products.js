@@ -36,7 +36,7 @@ export function initProducts() {
             img.alt = item.text;
 
             const captionContainer = document.createElement('div');
-            captionContainer.classList.add('l-products__caption');
+            captionContainer.classList.add('c-text__caption');
 
             const title = document.createElement('p');
             title.textContent = item.text;
