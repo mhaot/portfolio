@@ -34,7 +34,7 @@ c-sns__nav li {
     margin-bottom: 5px;
 }
 
-.c-nav__list::before {
+.c-nav__item::before {
     display: inline-block;
     width: 28px;
     content: "・";
