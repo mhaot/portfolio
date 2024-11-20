@@ -48,6 +48,8 @@
     width: 12px;
     height: 12px;
     margin-left: 8px;
+    border-width: 1.5px;
+    
 }
 .c-deco__iconBlank:before,
 .c-deco__iconBlank:after {
@@ -57,17 +59,17 @@
     width: 100%;
     height: 100%;
     border-style: solid;
-    border-color: var(--icon-color);
+    /* border-color: var(--icon-color); */
 }
 .c-deco__iconBlank:before {
     top: 0;
     left: 0;
-    border-width: var(--icon-width);
+    /* border-width: var(--icon-width); */
 }
 .c-deco__iconBlank:after {
     top: 6px;
     left: 6px;
-    border-width: 0 var(--icon-width) var(--icon-width) 0;
+    /* border-width: 0 var(--icon-width) var(--icon-width) 0; */
 }
 
 
