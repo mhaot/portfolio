@@ -166,9 +166,14 @@
         align-items: flex-start;
     }
 
-    .l-header__drawerNav--sns > li, .l-header__drawerNav--info > li {
+    .l-header__drawerBottom > ul > li {
         margin: 0 0 10px;
     }
+
+
+
+
+
 /*
 .l-header__top {
     position: sticky;
