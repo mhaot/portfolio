@@ -15,16 +15,28 @@
     border: none;
     margin: 0 auto 10px;
 }
+
 .l-instagram__list {
-    justify-content: space-between;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
-.l-instagram__list img {
-   margin: 0 auto;
+.l-instagram__item {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
 .l-instagram button {
     margin: 40px 40px 0;
 }
