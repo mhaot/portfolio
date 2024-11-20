@@ -27,8 +27,9 @@
 gap: 0;
 aspect-ratio: 3 / 2;
 }
-.l-instagram__list img {
+.l-instagram__item a img {
  height: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 .l-instagram__item {
