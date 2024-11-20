@@ -20,11 +20,17 @@ c-sns__nav a {
 }
 
 .l-footer__tel h2 {
-    margin-bottom: 5px   
+    margin-bottom: 5px;  
 }
 
 .l-footer__nav {
-    margin-bottom: 20px
+    margin-bottom: 20px;
+}
+
+.l-footer__nav::before {
+ display: inline-block;
+    width: 28px;
+    content: "・";
 }
 .c-nav__list {
     margin-bottom: 5px;
