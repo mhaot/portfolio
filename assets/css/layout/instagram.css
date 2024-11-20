@@ -14,7 +14,12 @@
     width: 30px;
     border: none;
     margin: 0 auto 10px;
-
+}
+.l-instagram__list {
+    justify-content: space-between;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 .l-instagram button {
     margin: 40px 40px 0;
