@@ -21,6 +21,10 @@
     display: flex;
     flex-wrap: wrap;
 }
+
+.l-instagram__list img {
+   margin: 0 auto;
+}
 .l-instagram button {
     margin: 40px 40px 0;
 }
