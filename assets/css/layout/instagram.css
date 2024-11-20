@@ -20,12 +20,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 0;
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  list-style: none;
+gap: 0;
+aspect-ratio: 3 / 2;
+}
+.l-instagram__list img {
+ height: 100%;
 }
 
 .l-instagram__item {
