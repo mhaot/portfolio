@@ -4,6 +4,7 @@
 }
 
 .l-footer__sns {
+    margin-top: 40px;
     margin-bottom: 45px;
     
 }
@@ -27,11 +28,14 @@ c-sns__nav a {
     margin-bottom: 20px;
 }
 
-.l-footer__nav::before {
- display: inline-block;
+.c-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.c-nav__list::before {
+    display: inline-block;
     width: 28px;
     content: "・";
-}
-.c-nav__list {
-    margin-bottom: 5px;
 }
