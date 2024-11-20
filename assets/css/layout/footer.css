@@ -15,7 +15,7 @@
     line-height: 1;
 }
 
-c-sns__nav a {
+c-sns__nav li {
     margin: 0px 10px;
     font-size: 14px;
 }
