@@ -2,3 +2,30 @@
     padding: 120px 0;
     text-align: center;
 }
+
+.l-footer__sns {
+    margin-bottom: 45px;
+    
+}
+
+.c-sns__nav {
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+}
+
+c-sns__nav a {
+    margin: 0px 10px;
+    font-size: 14px;
+}
+
+.l-footer__tel h2 {
+    margin-bottom: 5px   
+}
+
+.l-footer__nav {
+    margin-bottom: 20px
+}
+.c-nav__list {
+    margin-bottom: 5px;
+}
