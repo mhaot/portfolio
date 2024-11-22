@@ -1,3 +1,5 @@
+@media (max-width: 320px) {
+
 .l-footer {
     padding: 120px 0;
     text-align: center;
@@ -56,4 +58,6 @@
 }
 .l-footer__link > ul > li:first-child::before {
     display: none;
+}
+
 }
