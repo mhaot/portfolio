@@ -10,3 +10,16 @@
     margin-bottom: 10px;
 }
 }
+
+@media (max-width: 1280px) {
+
+.l-main__top--title {
+    text-align: center;
+    margin: 40px 70px 100px;
+
+}
+.l-main__top--title p {
+    white-space: pre-line; /* PC版はwhite-space: normal;を記述し<br>を無効にできる */
+    margin-bottom: 10px;
+}
+}
