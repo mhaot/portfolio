@@ -47,12 +47,6 @@
   border-left: none; /* 右列の左側のボーダーを消す */
 }
 
-.l-instagram__item img:nth-child(4),
-.l-instagram__item img:nth-child(5),
-.l-instagram__item img:nth-child(6) {
-  border-top: none; /* 下段の上側のボーダーを消す */
-}
-
 .l-instagram__item {
     margin: 0;
     padding: 0;
