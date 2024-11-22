@@ -1,4 +1,4 @@
-@media (max-width: 1280px) {
+@media screen and (man-width: 768px) {
 
 .l-carousel {
   position: relative;
@@ -52,7 +52,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media screen and (min-width: 769px) {
 
 .l-carousel {
   position: relative;
