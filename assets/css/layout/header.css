@@ -1,4 +1,4 @@
-@media (max-width: 320px) {
+@media screen and (max-width: 768px) {
 
     .l-header__top {
         height: 50px;
@@ -194,7 +194,7 @@
 
 }
 
-@media (max-width: 1280px) {
+@media screen and (min-width: 769px) {
     .l-header__top {
         height: 50px;
         background-color: #686260;
