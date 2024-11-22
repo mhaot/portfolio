@@ -1,7 +1,7 @@
 /* 全体に共通する基本スタイル */
 
-/* 320px以下の画面用のメディアクエリ */
-@media (max-width: 320px) {
+/* 768px以下の画面用のメディアクエリ */
+@media screen and (max-width: 768px) {
     body {
         color: #000000;
         margin: 0;
@@ -39,8 +39,8 @@
         }    } */
 }
 }
-/* 1280px以上の画面用のメディアクエリ */
-@media (min-width: 1280px) {
+/* 769px以上の画面用のメディアクエリ */
+@media screen and (min-width: 769px) {
     body {
         color: #000000;
         margin: 0;
