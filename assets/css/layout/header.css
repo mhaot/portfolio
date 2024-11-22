@@ -280,7 +280,7 @@
         top: 0;
         left: -100%;
         transition: left 0.5s ease;
-        width: 100vw;
+        width: 420px;
         height: 100vh;
         background-color: rgba(0, 0, 0, 0.85);
         z-index: 9998;
@@ -294,10 +294,8 @@
     #drawer-toggle:checked ~ .l-header__drawer-btn {
         width: 24px;
         height: 24px;
-        left: auto;
-        top: 0;
-        right: 0;
-        position: fixed;
+        top: 25%;
+        left: 30%;
         z-index: 9999;
 
     }
