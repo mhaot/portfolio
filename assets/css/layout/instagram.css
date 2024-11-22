@@ -32,21 +32,21 @@
     border: 1px solid #000000;
 }
 
-.l-instagram__item img:nth-child(1),
+/* .l-instagram__item img:nth-child(1),
 .l-instagram__item img:nth-child(2),
 .l-instagram__item img:nth-child(3) {
   border-bottom: none; /* 上段の下側のボーダーを消す */
-}
+} */
 
-.l-instagram__item img:nth-child(1),
+/* .l-instagram__item img:nth-child(1),
 .l-instagram__item img:nth-child(4) {
   border-right: none; /* 左列の右側のボーダーを消す */
-}
+} */
 
-.l-instagram__item img:nth-child(3),
+/* .l-instagram__item img:nth-child(3),
 .l-instagram__item img:nth-child(6) {
   border-left: none; /* 右列の左側のボーダーを消す */
-}
+} */
 
 .l-instagram__item {
     margin: 0;
