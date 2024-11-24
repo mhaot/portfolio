@@ -99,6 +99,7 @@
 
     .l-about__hero {
         justify-self: end;
+        margin-left: 30%;
     }
 
     .l-about__hero picture p {
@@ -108,9 +109,9 @@
 
     .l-about__description {
         justify-self: start;
-        width: 240px;
+        width: 40%;
         height: 175px;
-        padding: 32px;
+        padding: 60px 64px;
         border: 1px solid #000000;
         /* border: 1px solid transparent; */
         /* border: none; */
@@ -140,7 +141,7 @@
     } */
 
     .l-about__menu {
-        margin: 0 28px;
+        margin: 0 10%;
     }
 
 
@@ -152,15 +153,15 @@
     }
 
     .l-about__list img {
-        width: 126px;
-        height: 126px;
+        width: 275px;
+        height: 275px;
     }
 
     .l-about__item:nth-child(2n) {
         margin-bottom: 40px;
         padding-top: 32px;
     }
-    
+
     /* .l-about__caption {
         margin-top: 12px;
         display: flex;
@@ -168,7 +169,7 @@
         max-width: 126px;
         align-items: center;
     } */
-    
+
     /* .l-about__caption p:last-child {
     flex: 1 1 100%;
     } */

@@ -13,6 +13,13 @@
 
 @media screen and (min-width: 769px) {
 
+.l-main__sub {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+
 .l-main__top--title {
     text-align: center;
     margin: 40px 70px 100px;

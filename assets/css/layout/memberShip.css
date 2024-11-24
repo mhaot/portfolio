@@ -18,12 +18,20 @@
 }
 
 }
-    
+
 @media screen and (min-width: 769px) {
 
 .l-memberShip {
     margin-bottom: 80px;
-}
+    margin-bottom: 80px;
+    /* width: calc(100% - 300px); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15%;
+    }
+
 
 .l-memberShip__deco {
     display: flex;
