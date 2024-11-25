@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .l-about {
         display: grid;
         position: relative;
@@ -169,7 +169,7 @@
 }
 
     }
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
 
 
     .l-about {
