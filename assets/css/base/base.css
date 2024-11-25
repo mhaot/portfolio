@@ -1,7 +1,7 @@
 /* 全体に共通する基本スタイル */
 
 /* 768px以下の画面用のメディアクエリ */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     body {
         color: #000000;
         margin: 0;
@@ -38,9 +38,51 @@
         white-space: pre;
         }    } */
 }
+    
 }
-/* 769px以上の画面用のメディアクエリ */
-@media screen and (min-width: 769px) {
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 0.48px;
+        background-color: #F5F3ED;
+        font-family: "Noto Sans JP", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        /* font-family: 'Basel', sans-serif; */
+        font-size: 13px;
+        a {
+            transition: all 0.8s ease;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border: 1px solid #000000;
+        }
+
+        picture {
+        position: relative;
+        }
+
+        picture p {
+        position: abusolute;
+        }
+        /* p {
+            white-space: pre-wrap;
+        }
+
+        p::after {
+        content: "、\A";
+        white-space: pre;
+        }    } */
+}
+    
+}
+
+@media (min-width: 1025px) {
     body {
         color: #000000;
         margin: 0;
