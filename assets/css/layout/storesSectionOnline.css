@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
     .l-storesSectionOnline {
     margin-bottom: 80px;
 }
@@ -11,7 +11,7 @@
 }
 }
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
     .l-storesSectionOnline {
     margin-bottom: 80px;
     flex-grow: 1;
