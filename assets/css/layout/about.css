@@ -83,11 +83,14 @@
     /* .l-about__caption p:last-child {
     flex: 1 1 100%;
     } */
+}
 
-
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* タブレットのスタイル */
+}
 
     }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1025px) {
 
 
     .l-about {
