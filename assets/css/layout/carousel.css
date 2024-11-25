@@ -5,13 +5,21 @@
   margin-bottom: 50px;
   color: #F5F3ED;
 }
-
-.l-carousel__slides--item {
+ 
+.l-carousel__slides {
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
   overflow: hidden;
   height: 450px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+
+.l-carousel__slides--item {
   position: relative;
   margin: 0;
   padding: 0;
@@ -55,14 +63,14 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-
+  
 .l-carousel {
   position: relative;
   margin-bottom: 50px;
   color: #F5F3ED;
 }
-
-.l-carousel__slides--item {
+ 
+.l-carousel__slides {
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
@@ -73,6 +81,15 @@
   padding: 0;
   width: 100%;
 }
+
+
+.l-carousel__slides--item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 
 
 .l-carousel__slides--overlay {
@@ -112,15 +129,13 @@
 }
 
 @media (min-width: 1025px) {
-
 .l-carousel {
   position: relative;
   margin-bottom: 50px;
   color: #F5F3ED;
-
 }
-
-.l-carousel__slides--item {
+ 
+.l-carousel__slides {
   display: flex;
   flex-wrap: nowrap;
   align-items: stretch;
@@ -133,14 +148,14 @@
 }
 
 
-.l-carousel__slides--overlay {
+.l-carousel__slides--item {
   position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden;
-  height: 640px;
 }
+
+
 
  /* .l-carousel__slides--img {
     width: 100%;
