@@ -1,12 +1,13 @@
 @media screen and (max-width: 768px) {
     .l-news {
     margin-bottom: 80px;
-
 }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    /* タブレットのスタイル */
+    .l-news {
+    margin-bottom: 80px;
+}
 }
 
 
