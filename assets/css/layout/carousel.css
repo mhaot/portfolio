@@ -7,12 +7,15 @@
 }
 
 .l-carousel__slides--item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+  height: 450px;
   position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden;
-  height: 450px;
 }
 
 
@@ -60,12 +63,15 @@
 }
 
 .l-carousel__slides--item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+  height: 450px;
   position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden;
-  height: 450px;
 }
 
 
@@ -115,12 +121,15 @@
 }
 
 .l-carousel__slides--item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+  height: 640px;
   position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow: hidden;
-  height: 640px;
 }
 
 
