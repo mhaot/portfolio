@@ -4,7 +4,12 @@
 }
 }
 
-@media screen and (min-width: 769px) {
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* タブレットのスタイル */
+}
+
+@media screen and (min-width: 1025px) {
     .l-storesSectionOnline {
     margin-bottom: 80px;
     flex-grow: 1;
