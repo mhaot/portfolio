@@ -169,7 +169,7 @@
     padding-top: 32px; */
 }
 
-.l-about__item:nth-child(3) {
+.l-about__item:nth-child(3), .l-about__item:nth-child(6) {
     margin-right: 0;
     padding-top: 8%;
     /* margin-bottom: 50px; */
