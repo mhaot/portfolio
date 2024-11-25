@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
 .l-instagram {
     text-align: center;
@@ -135,7 +135,7 @@
 }
 
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
 
 .l-instagram {
     text-align: center;
