@@ -454,7 +454,7 @@ outline: none;
         aspect-ratio: 1 / 1;
     }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
     .c-img__mainTopHero {
         width: 293px;
@@ -469,6 +469,7 @@ outline: none;
         aspect-ratio: 1 / 1;
     }
 }
+
 @media (min-width: 769px) and (max-width: 1024px) {
     .c-img__mainTopHero {
         width: 293px;
@@ -484,7 +485,7 @@ outline: none;
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media (min-width: 1025px) {
 
     .c-img__mainTopHero {
         /* width: 935px;
