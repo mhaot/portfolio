@@ -2,18 +2,17 @@
 
 .l-carousel {
   margin-bottom: 50px;
-  padding: 0;
   color: #F5F3ED;
 }
- 
+
 .l-carousel__slides {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  height: 450px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 
@@ -29,7 +28,7 @@
     height: 100%;
     object-fit: cover;
   }
-  
+
   .l-carousel__slides--item button {
     position: absolute;
     right: 10px;
@@ -51,114 +50,113 @@
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  
-.l-carousel {
-  position: relative;
-  margin-bottom: 50px;
-  color: #F5F3ED;
-}
- 
-.l-carousel__slides {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  overflow: hidden;
-  height: 450px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
 
-
-.l-carousel__slides--item {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-
- /* .l-carousel__slides--img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; */
-
-
+  .l-carousel {
+    position: relative;
+    margin-bottom: 50px;
+    color: #F5F3ED;
   }
-  .l-carousel__slides--item button {
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
-    }
 
-    .l-carousel__slides--nav {
+  .l-carousel__slides {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    overflow: hidden;
+    height: 450px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+
+  .l-carousel__slides--item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+
+  /* .l-carousel__slides--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; */
+
+
+    }
+    .l-carousel__slides--item button {
       position: absolute;
-      left: 5%;
-      bottom: 2%;
-      background-color: transparent;
+      right: 10px;
+      bottom: 10px;
       }
 
-  .l-carousel__slides--indicator {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      .l-carousel__slides--nav {
+        position: absolute;
+        left: 5%;
+        bottom: 2%;
+        background-color: transparent;
+        }
+
+    .l-carousel__slides--indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+  @media (min-width: 1025px) {
+  .l-carousel {
+    margin-bottom: 50px;
+    color: #F5F3ED;
   }
-}
 
-@media (min-width: 1025px) {
-.l-carousel {
-  padding: 0;
-  margin-bottom: 50px;
-  color: #F5F3ED;
-}
- 
-.l-carousel__slides {
-  display: flex;
-  flex-wrap: nowrap;
-  align-items: stretch;
-  height: 640px;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-
-.l-carousel__slides--item {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-
-
-
- /* .l-carousel__slides--img {
+  .l-carousel__slides {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    height: 640px;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 100%;
-    object-fit: cover; */
-
-
   }
-  .l-carousel__slides--item button {
-    position: absolute;
-    right: 50%;
-    bottom: 10%;
-    }
 
-    .l-carousel__slides--nav {
+
+  .l-carousel__slides--item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+
+
+  /* .l-carousel__slides--img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; */
+
+
+    }
+    .l-carousel__slides--item button {
       position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      bottom: 2%;
-      background-color: transparent;
-    }
-  
+      right: 50%;
+      bottom: 10%;
+      }
 
-  .l-carousel__slides--indicator {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-  }
-}
+      .l-carousel__slides--nav {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: 2%;
+        background-color: transparent;
+      }
+
+
+    .l-carousel__slides--indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 
