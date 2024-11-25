@@ -470,7 +470,18 @@ outline: none;
     }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
-    /* タブレットのスタイル */
+    .c-img__mainTopHero {
+        width: 293px;
+        height: 293px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .c-img__mainSubHero {
+        /* width: 320px;
+        height: 320px; */
+        margin-bottom: 40px;
+        aspect-ratio: 1 / 1;
+    }
 }
 
 @media screen and (min-width: 1025px) {
