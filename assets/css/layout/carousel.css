@@ -7,7 +7,6 @@
 
 .l-carousel__slides {
     display: flex;
-    flex-wrap: nowrap;
     align-items: stretch;
     height: 450px;
     margin: 0;
@@ -17,6 +16,8 @@
 
 
 .l-carousel__slides--item {
+  flex: 1;
+  display: flex; 
   position: relative;
   margin: 0;
   padding: 0;
@@ -24,9 +25,8 @@
 }
 
   .l-carousel__slides--img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: auto;
+    max-height: 100%;
   }
 
   .l-carousel__slides--item button {
