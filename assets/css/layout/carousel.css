@@ -27,8 +27,9 @@
 }
 
   .l-carousel__slides--img {
-    width: auto;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .l-carousel__slides--item button {
@@ -80,11 +81,11 @@
   }
 
 
-  /* .l-carousel__slides--img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; */
-
+ .l-carousel__slides--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
     }
     .l-carousel__slides--item button {
@@ -132,13 +133,11 @@
   }
 
 
-
-  /* .l-carousel__slides--img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; */
-
-
+.l-carousel__slides--img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
     }
     .l-carousel__slides--item button {
       position: absolute;
