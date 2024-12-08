@@ -1,5 +1,11 @@
 @media (max-width: 768px) {
+  .l-carousel {
+    margin-bottom: 50px;
+    color: #F5F3ED;
+    position: relative;
+  }
 
+<<<<<<< HEAD
 .l-carousel {
   margin-bottom: 50px;
   color: #F5F3ED;
@@ -25,32 +31,167 @@
   padding: 0;
   width: 100%;
 }
+=======
+  .l-carousel__slides--item--present {
+    height: 450px;
+    background-image: url(/assets/images/slide01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+  }
 
-  .l-carousel__slides--img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  .l-carousel__slides--item--forest {
+    height: 450px;
+    background-image: url(/assets/images/slide02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+  }
+
+  .l-carousel__slides--item--blooming {
+    height: 450px;
+    background-image: url(/assets/images/slide03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+  }
+
+  .l-carousel__slides--item--mask {
+    height: 450px;
+    background-image: url(/assets/images/slide04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+  }
+
+
+  .l-carousel__slides--item--hinokiSkint {
+    height: 450px;
+    background-image: url(/assets/images/slide05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
+  }
+>>>>>>> 2405205 (12/9)
+
+  .l-carousel__slides--item--leaf {
+    height: 450px;
+    background-image: url(/assets/images/slide06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #000000;
   }
 
   .l-carousel__slides--item button {
     position: absolute;
-    right: 10px;
-    bottom: 10px;
+    right: 5%;
+    bottom: 3%;
+  }
+
+  .l-carousel__slides--nav {
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    background-color: transparent;
     }
 
-    .l-carousel__slides--nav {
-      position: absolute;
-      left: 5%;
-      bottom: 2%;
+    /* .l-carousel__slides--nav button {
+      display: inline-block;
+      position: relative;
+      width: 10px;
+      height: 10px;
+      background-color: #ffffff;
       background-color: transparent;
-      }
+      border: 0px;
+      cursor: pointer;
+      opacity: .4;
+      transition: 400ms ease;
+      margin-right: 4px;
+      padding: 0;
 
-  .l-carousel__slides--indicator {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    }
+
+
+    .c-btn__indicator {
+      display: inline-block;
+      position: relative;
+      width: 10px;
+      height: 10px;
+      background-image: conic-gradient(white 0deg, black 0deg);
+      clip-path: circle();
+      display: grid;
+      place-items: center;
   }
+
+  .c-btn__indicator::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background-color: white;
+      clip-path: circle();
+  } */
+
+  .l-carousel__slides--nav button {
+    display: inline-block;
+    position: relative;
+    width: 18px; /* 外周を含めた全体のサイズ */
+    height: 18px;
+    /* background-color: transparent; */
+    border: none;
+    cursor: pointer;
+    margin-right: 4px;
+    padding: 0;
+  }
+
+  .c-btn__indicator {
+    position: relative;
+    width: 10px; /* ボタン中央の白い丸のサイズ */
+    height: 10px;
+    background-color: #ffffff; /* 中央の色 */
+    border-radius: 50%; /* 円形にする */
+    /* box-shadow: 0 0 0 1px white;  */
+    /* 外周を白い線で囲む */
+  }
+
+  .c-btn__indicator::after {
+    display: inline-block;
+    content: "";
+    /* position: absolute; */
+    /* top: -4px;外周の分を中央からずらす
+    left: -4px; */
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ffffff; /* 外周の白いリング */
+    border-radius: 50%; /* 円形にする */
+    box-sizing: border-box; /* サイズ計算を正確にする */
+  }
+
+
+
+
+  /* .l-carousel__slides--indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+
+
+
+
+
+
+
 }
+
+
+
+
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
@@ -81,6 +222,7 @@
   }
 
 
+<<<<<<< HEAD
  .l-carousel__slides--img {
     width: 100%;
     height: 100%;
@@ -88,6 +230,8 @@
   }
 
     }
+=======
+>>>>>>> 2405205 (12/9)
     .l-carousel__slides--item button {
       position: absolute;
       right: 10px;
@@ -107,11 +251,15 @@
         justify-content: center;
     }
 
+  }
+
+
 
   @media (min-width: 1025px) {
   .l-carousel {
     margin-bottom: 50px;
     color: #F5F3ED;
+    position: relative;
   }
 
   .l-carousel__slides {
@@ -132,6 +280,7 @@
     width: 100%;
   }
 
+<<<<<<< HEAD
 
 .l-carousel__slides--img {
     width: 100%;
@@ -139,6 +288,8 @@
     object-fit: cover;
   }
     }
+=======
+>>>>>>> 2405205 (12/9)
     .l-carousel__slides--item button {
       position: absolute;
       right: 50%;
@@ -161,3 +312,4 @@
     }
 
 
+  }

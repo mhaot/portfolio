@@ -219,20 +219,23 @@
 }
 }
 
-.c-btn__indicator {
+
+
+/* .c-btn__indicator {
     display: block;
     position: relative;
     width: 10px;
     height: 10px;
     margin: 7px;
     background-color: #ffffff;
-    /* border: 2px solid transparent; */
+    border: 2px solid transparent;
     border-radius: 50%;
     transition: background-color cubic-bezier(0.215, 0.61, 0.355, 1) .3s;
     cursor: pointer;
-}
+} */
 
-.c-btn__indicator:active {
+
+/* .c-btn__indicator:active {
 background-color: #ffffff;
 }
 
@@ -255,7 +258,7 @@ outline: none;
 
 .c-btn__indicator:active::after {
     animation: pulseMotion 1.4s linear infinite;
-}
+} */
 
 /* slide */
 /* slide01 */

@@ -36,19 +36,19 @@
 .l-instagram__list li:nth-child(1) img,
 .l-instagram__list li:nth-child(2) img,
 .l-instagram__list li:nth-child(3) img {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 /* 左列の右側のボーダーを消す */
 .l-instagram__list li:nth-child(1) img,
 .l-instagram__list li:nth-child(4) img {
-  border-right: none;
+    border-right: none;
 }
 
 /* 右列の左側のボーダーを消す */
 .l-instagram__list li:nth-child(3) img,
 .l-instagram__list li:nth-child(6) img {
-  border-left: none;
+    border-left: none;
 }
 
 .l-instagram__item {
@@ -104,19 +104,19 @@
 .l-instagram__list li:nth-child(1) img,
 .l-instagram__list li:nth-child(2) img,
 .l-instagram__list li:nth-child(3) img {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 /* 左列の右側のボーダーを消す */
 .l-instagram__list li:nth-child(1) img,
 .l-instagram__list li:nth-child(4) img {
-  border-right: none;
+    border-right: none;
 }
 
 /* 右列の左側のボーダーを消す */
 .l-instagram__list li:nth-child(3) img,
 .l-instagram__list li:nth-child(6) img {
-  border-left: none;
+    border-left: none;
 }
 
 .l-instagram__item {
@@ -173,19 +173,19 @@
 .l-instagram__list li:nth-child(1) img,
 .l-instagram__list li:nth-child(2) img,
 .l-instagram__list li:nth-child(3) img {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 /* 左列の右側のボーダーを消す */
 .l-instagram__list li:nth-child(1) img,
 .l-instagram__list li:nth-child(4) img {
-  border-right: none;
+    border-right: none;
 }
 
 /* 右列の左側のボーダーを消す */
 .l-instagram__list li:nth-child(3) img,
 .l-instagram__list li:nth-child(6) img {
-  border-left: none;
+    border-left: none;
 }
 
 .l-instagram__item {
