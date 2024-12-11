@@ -18,16 +18,16 @@
     padding: 0;
     width: 100%;
 }
-  
+
 .l-carousel__slides--item {
   flex: 1;
-  display: flex; 
+  display: flex;
   position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-  
+
   .l-carousel__slides--item--present {
     height: 450px;
     background-image: url(/assets/images/slide01.jpg);
@@ -35,6 +35,7 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #000000;
+    border-top: none;
   }
 
   .l-carousel__slides--item--forest {
@@ -44,6 +45,8 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #000000;
+    border-top: none;
+
   }
 
   .l-carousel__slides--item--blooming {
@@ -53,6 +56,8 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #000000;
+    border-top: none;
+
   }
 
   .l-carousel__slides--item--mask {
@@ -62,6 +67,8 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #000000;
+    border-top: none;
+
   }
 
 
@@ -72,6 +79,8 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #000000;
+    border-top: none;
+
   }
 
 
@@ -82,6 +91,8 @@
     background-size: cover;
     background-position: center;
     border: 1px solid #000000;
+    border-top: none;
+
   }
 
   .l-carousel__slides--item button {
@@ -91,88 +102,46 @@
   }
 
   .l-carousel__slides--nav {
+    display: flex;
     position: absolute;
     left: 5%;
     bottom: 3%;
     background-color: transparent;
     }
 
-    /* .l-carousel__slides--nav button {
-      display: inline-block;
-      position: relative;
-      width: 10px;
-      height: 10px;
-      background-color: #ffffff;
-      background-color: transparent;
-      border: 0px;
-      cursor: pointer;
-      opacity: .4;
-      transition: 400ms ease;
-      margin-right: 4px;
-      padding: 0;
-
-    }
-
-
     .c-btn__indicator {
-      display: inline-block;
-      position: relative;
-      width: 10px;
-      height: 10px;
-      background-image: conic-gradient(white 0deg, black 0deg);
+      width: 18px;
+      height: 18px;
       clip-path: circle();
       display: grid;
       place-items: center;
+      position: relative;
+      background-color: transparent;
   }
 
+  /* アニメーション部分（外周の白い線） */
+  .c-btn__indicator::after {
+      content: "";
+      position: absolute;
+      width: 18px; /* 外周全体の幅 */
+      height: 18px;
+      background-image: conic-gradient(white 0deg, transparent 360deg); /* 1px幅の外周線 */
+      clip-path: circle();
+      border-radius: 50%; /* 丸型にする */
+  }
+
+  /* 内側の白い円 */
   .c-btn__indicator::before {
       content: "";
-      width: 18px;
-      height: 18px;
-      background-color: white;
+      position: absolute;
+      width: 10px; /* 中心の白い円の直径 */
+      height: 10px;
+      background-color: white; /* 中心の白色 */
       clip-path: circle();
-  } */
-
-  .l-carousel__slides--nav button {
-    display: inline-block;
-    position: relative;
-    width: 18px; /* 外周を含めた全体のサイズ */
-    height: 18px;
-    /* background-color: transparent; */
-    border: none;
-    cursor: pointer;
-    margin-right: 4px;
-    padding: 0;
+      z-index: 1; /* 外周線より前面に配置 */
   }
 
-  .c-btn__indicator {
-    position: relative;
-    width: 10px; /* ボタン中央の白い丸のサイズ */
-    height: 10px;
-    background-color: #ffffff; /* 中央の色 */
-    border-radius: 50%; /* 円形にする */
-    /* box-shadow: 0 0 0 1px white;  */
-    /* 外周を白い線で囲む */
-  }
 
-  .c-btn__indicator::after {
-    display: inline-block;
-    content: "";
-    /* position: absolute; */
-    /* top: -4px;外周の分を中央からずらす
-    left: -4px; */
-    width: 18px;
-    height: 18px;
-    border: 1px solid #ffffff; /* 外周の白いリング */
-    border-radius: 50%; /* 円形にする */
-    box-sizing: border-box; /* サイズ計算を正確にする */
-  }
-
-  /* .l-carousel__slides--indicator {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
 
 }
 
