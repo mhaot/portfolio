@@ -19,10 +19,6 @@
     width: 100%;
 }
   
-.l-carousel__slides--overlay {
-   flex: 1;
-}
-
 .l-carousel__slides--item {
   flex: 1;
   display: flex; 
@@ -31,7 +27,7 @@
   padding: 0;
   width: 100%;
 }
-=======
+  
   .l-carousel__slides--item--present {
     height: 450px;
     background-image: url(/assets/images/slide01.jpg);
