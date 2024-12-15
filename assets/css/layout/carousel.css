@@ -289,58 +289,141 @@
 
 
   @media (min-width: 1025px) {
-  .l-carousel {
-    margin-bottom: 50px;
-    color: #F5F3ED;
-    position: relative;
-  }
-
+    .l-carousel {
+      margin-bottom: 50px;
+      color: #F5F3ED;
+      position: relative;
+    }
+  
   .l-carousel__slides {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: stretch;
-    height: 640px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+      display: flex;
+      align-items: stretch;
+      height: 700px;
+      margin: 0;
+      padding: 0;
+      width: 100%;
   }
-
-
+  
   .l-carousel__slides--item {
+    flex: 1;
+    display: flex;
     position: relative;
     margin: 0;
     padding: 0;
     width: 100%;
   }
-
-
-.l-carousel__slides--img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-
+  
+    .l-carousel__slides--item--present {
+      height: 700px;
+      background-image: url(/assets/images/slide01.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid #000000;
+      border-top: none;
+    }
+  
+    .l-carousel__slides--item--forest {
+      height: 700px;
+      background-image: url(/assets/images/slide02.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid #000000;
+      border-top: none;
+  
+    }
+  
+    .l-carousel__slides--item--blooming {
+      height: 700px;
+      background-image: url(/assets/images/slide03.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid #000000;
+      border-top: none;
+  
+    }
+  
+    .l-carousel__slides--item--mask {
+      height: 700px;
+      background-image: url(/assets/images/slide04.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid #000000;
+      border-top: none;
+  
+    }
+  
+  
+    .l-carousel__slides--item--hinokiSkint {
+      height: 700px;
+      background-image: url(/assets/images/slide05.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid #000000;
+      border-top: none;
+  
+    }
+  
+  
+    .l-carousel__slides--item--leaf {
+      height: 700px;
+      background-image: url(/assets/images/slide06.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border: 1px solid #000000;
+      border-top: none;
+  
+    }
+  
     .l-carousel__slides--item button {
       position: absolute;
-      right: 50%;
-      bottom: 10%;
-      }
-
-      .l-carousel__slides--nav {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        bottom: 2%;
-        background-color: transparent;
-      }
-
-
-    .l-carousel__slides--indicator {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      right: 5%;
+      bottom: 3%;
     }
-
-
-  }
+  
+    .l-carousel__slides--nav {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      bottom: 3%;
+      transform: translate(-50%, -50%);
+      background-color: transparent;
+      }
+  
+      .c-btn__indicator {
+        width: 18px;
+        height: 18px;
+        clip-path: circle();
+        display: grid;
+        place-items: center;
+        position: relative;
+        background-color: transparent;
+    }
+  
+    .c-btn__indicator::after {
+        content: "";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background-image: conic-gradient(white 0deg, transparent 360deg);
+        clip-path: circle();
+        border-radius: 50%;
+        background-color: 1px solid #FFFFFF;
+        background-color: transparent;
+    }
+  
+    .c-btn__indicator::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        clip-path: circle();
+        z-index: 1;
+    }
+  }  

@@ -460,9 +460,10 @@ outline: none;
 @media (max-width: 768px) {
 
     .c-img__mainTopHero {
-        width: 293px;
-        height: 293px;
+        /* width: 293px;
+        height: 293px; */
         aspect-ratio: 1 / 1;
+        width: 100%;
     }
 
     .c-img__mainSubHero {
@@ -475,8 +476,8 @@ outline: none;
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .c-img__mainTopHero {
-        width: 293px;
-        height: 293px;
+        /* width: 293px;
+        height: 293px; */
         aspect-ratio: 1 / 1;
     }
 

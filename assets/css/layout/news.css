@@ -7,7 +7,13 @@
 @media (min-width: 769px) and (max-width: 1024px) {
     .l-news {
     margin-bottom: 80px;
+    width: calc((100% - 10%) / 2);
 }
+    /* .l-news img {
+    height: 360px;
+    width: 360px;
+} */
+
 }
 
 

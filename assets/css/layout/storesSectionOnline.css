@@ -7,9 +7,19 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .l-storesSectionOnline {
-    margin-bottom: 80px;
+        margin-bottom: 80px;
+        width: calc((100% - 10%) / 2);
+    
+    }
+
+    /* .l-storesSectionOnline img{
+        height: 360px;
+        width: 360px;
+    } */
+
+
 }
-}
+
 
 @media (min-width: 1025px) {
     .l-storesSectionOnline {

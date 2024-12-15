@@ -13,13 +13,27 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
+.l-main__sub {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.l-main__sub section {
+    flex: 1;
+    max-width: 40%;
+    width: 100%;
+}
+
+
+
 .l-main__top--title {
     text-align: center;
     margin: 40px 70px 100px;
 
 }
 .l-main__top--title p {
-    white-space: pre-line; /* PC版はwhite-space: normal;を記述し<br>を無効にできる */
+    white-space: normal; /* PC版はwhite-space: normal;を記述し<br>を無効にできる */
     margin-bottom: 10px;
 }
 
@@ -41,7 +55,7 @@
 
 }
 .l-main__top--title p {
-    white-space: pre-line; /* PC版はwhite-space: normal;を記述し<br>を無効にできる */
+    white-space: normal; /* PC版はwhite-space: normal;を記述し<br>を無効にできる */
     margin-bottom: 10px;
 }
 }
