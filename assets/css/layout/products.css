@@ -71,12 +71,12 @@
 }
 
 .l-products__description {
-    width: 648px;
-    height: 258px;
     padding: 40px 44px;
     border: 1px solid #000000;
     line-height: 22px;
     margin-bottom: 60px;
+    margin-right: 15.8%;
+
 }
 
 

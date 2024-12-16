@@ -73,11 +73,11 @@
     }
 
     .l-about__description {
-        width: 648px;
         padding: 40px 44px;
         border: 1px solid #000000;
         margin-bottom: 60px;
         line-height: 22px;
+        margin-right: 15.8%;
     }
 
     .l-about__menu {
@@ -130,7 +130,6 @@
 
 
     .l-about__description {
-        justify-self: start;
         width: 40%;
         height: 175px;
         padding: 60px 64px;
