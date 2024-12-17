@@ -42,12 +42,14 @@
 }
 
 .l-products__item {
-    width: calc((100% - 4%) / 2);}
+    width: calc((100% - 4%) / 2);
+}
 
 .l-products__item:nth-child(2n) {
     margin-bottom: 40px;
     padding-top: 32px;
 }
+
 
 }
 
@@ -83,9 +85,10 @@
 .l-products__description button {
     margin-top: 24px;
 
-}m
+}
+
 .l-products__menu {
-    margin: 0 10%;
+    margin: 0 12.5%;
 }
 
 
@@ -96,9 +99,9 @@
     flex-wrap: wrap;
 }
 
-.l-products__list img {
-    width: 255px;
-    height: 255px;
+.l-products__item {
+    width: calc((100% - 11%) / 2);
+
 }
 
 .l-products__item:nth-child(2n) {
@@ -107,9 +110,24 @@
 }
 
 .l-products__item:nth-child(2n-1) {
-    margin-right: 14.58333%;
+    padding-top: 32px;
+    /* margin-right: 10%; */
 
 }
+
+
+
+/* .l-products__item { */
+    /* width: calc((100% - 11.4%) / 2); */
+    /* padding-top: 32px; */
+    /* margin-bottom: 40px; */
+    /* すべてのカードに下マージン */
+/* } */
+
+/* .l-products__item:nth-last-child(-n+2),{ */
+    /* margin-bottom: 0;  */
+    /* 最後の行の2つのカードにマージンをなくす */
+/* } */
 
 }
 

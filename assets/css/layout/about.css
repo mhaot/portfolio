@@ -81,7 +81,7 @@
     }
 
     .l-about__menu {
-        margin: 0 10%;
+        margin: 0 12.5%;
     }
 
     .l-about__list {
@@ -91,9 +91,9 @@
         flex-wrap: wrap;
     }
 
-    .l-about__list img {
-        width: 255px;
-        height: 255px;
+    .l-about__item {
+        width: calc((100% - 11%) / 2);
+
     }
 
     .l-about__item:nth-child(2n) {
@@ -102,8 +102,9 @@
     }
 
     .l-about__item:nth-child(2n-1) {
-        margin-right: 14.58333%;
         padding-top: 32px;
+        /* margin-right: 10%; */
+
     }
 
 }
