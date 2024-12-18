@@ -43,7 +43,7 @@
 
 
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
     body {
         color: #000000;
         margin: 0;
@@ -84,7 +84,7 @@
 }
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     body {
         color: #000000;
         margin: 0;

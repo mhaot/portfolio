@@ -195,7 +195,7 @@
 
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1023px) {
   .l-header__top {
         height: 50px;
         background-color: #686260;
@@ -394,7 +394,7 @@
 
 
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
     .l-header__top {
         height: 50px;
         background-color: #686260;
