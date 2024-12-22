@@ -175,13 +175,13 @@
     flex-wrap: wrap;
 }
 
-
 .l-products__item {
     width: calc((100% - 12.5%) / 3);
     padding: 0;
     margin: 0;
 
 }
+
 .l-products__item:nth-child(1), .l-products__item:nth-child(4) {
     margin-right: 6%;
 }
@@ -193,12 +193,10 @@
 
 }
 
-.l-products__item:nth-child(3) {
+.l-products__item:nth-child(3), .l-products__item:nth-child(6) {
     margin-right: 0;
     padding-top: 8%;
 }
-
-
 
 
 }

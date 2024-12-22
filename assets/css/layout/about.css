@@ -114,14 +114,14 @@
 
 
     .l-about {
-        display: grid;
+        display: flex;
+        flex-direction: column;
         position: relative;
         height: 100%;
     }
 
 
     .l-about__hero {
-        justify-self: end;
         margin-left: 30%;
     }
 
@@ -140,7 +140,7 @@
     }
 
     .l-about__menu {
-        margin: 0 10%;
+        margin: 0 6.25%;
     }
 
 .l-about__list {
@@ -150,47 +150,28 @@
     flex-wrap: wrap;
 }
 
-.l-about__list img {
-    /* margin-right: 97px; */
-    width: 275px;
-    height: 275px;
+.l-about__item {
+    width: calc((100% - 12.5%) / 3);
+    padding: 0;
+    margin: 0;
+
 }
+
 .l-about__item:nth-child(1), .l-about__item:nth-child(4) {
-    margin-right: 9%;
+    margin-right: 6%;
 }
 
 
 .l-about__item:nth-child(2), .l-about__item:nth-child(5) {
-    margin-right: 9%;
+    margin-right: 6%;
     padding-top: 4%;
 
-    /* margin-right: 97px;
-    padding-top: 32px; */
 }
 
 .l-about__item:nth-child(3), .l-about__item:nth-child(6) {
     margin-right: 0;
     padding-top: 8%;
-    /* margin-bottom: 50px; */
-
-    /* margin-right: 0;
-    padding-top: 64px;
-    margin-bottom: 50px; */
 }
-
-/* .l-about__caption {
-    margin-top: 12px;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 126px;
-    align-items: center;
-} */
-
-/* .l-about__caption p:last-child {
-    flex: 1 1 100%;
-} */
-
-
 
     }
 

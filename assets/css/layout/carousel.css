@@ -104,7 +104,7 @@
     background-color: transparent;
     }
 
-    .c-btn__indicator {
+    /* .c-btn__indicator {
       width: 18px;
       height: 18px;
       clip-path: circle();
@@ -134,7 +134,60 @@
       background-color: white;
       clip-path: circle();
       z-index: 1;
+  } */
+
+
+  .c-btn__indicator {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    opacity: .4;
+    transition: 400ms ease;
+    margin-right: 4px;
+    padding: 0;
   }
+
+  .c-btn__indicator span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .c-btn__indicator svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+  }
+
+  .c-btn__indicator circle {
+    opacity: 0;
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 1;
+    stroke-dasharray: 0 78.5;
+    will-change: stroke-dasharray;
+    pointer-events: none;
+  }
+
 
 
 

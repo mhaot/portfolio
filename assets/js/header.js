@@ -1,6 +1,7 @@
 // header.js
+
+// .l-header__drawer
 export function initHeader() {
-    // ドロワーリスト項目のデータを配列に定義
     const drawerItems = [
         { title: "PRODUCTS", subtitle: "商品情報", link: "#", hasChevron: true },
         { title: "NEWS", subtitle: "ニュース", link: "#", hasChevron: false },
@@ -48,6 +49,46 @@ export function initHeader() {
     });
 
 
+
+    // .l-header__top
+    document.addEventListener('DOMContentLoaded', function () {
+    const newsList = document.querySelector('.l-header__news');
+    let newsItems = document.querySelectorAll('.l-header__news li');
+    const itemHeight = newsItems[0].offsetHeight; // 各お知らせの高さ
+    let index = 0;
+
+    // 各 li にアイコンを追加
+    newsItems.forEach(item => {
+        const icon = document.createElement('i');
+        icon.className = 'c-deco__chevronLeft';
+        item.appendChild(icon);
+    });
+
+    // 最後のアイテムをクローンして最初に追加
+    const lastItemClone = newsItems[newsItems.length - 1].cloneNode(true);
+    newsList.insertBefore(lastItemClone, newsItems[0]);
+
+    // クローン追加後、再取得
+    newsItems = document.querySelectorAll('.l-header__news li');
+
+    function slideNews() {
+        index++;
+        newsList.style.transition = 'transform 2.5s ease';
+        newsList.style.transform = `translateY(-${index * itemHeight}px)`;
+
+        if (index === newsItems.length - 1) {
+        // 最後のスライドが終わったら、最初に戻る
+        setTimeout(() => {
+            newsList.style.transition = 'none';
+            newsList.style.transform = `translateY(0)`;
+            index = 0;
+        }, 2500); // スライドが終わるタイミングと合わせる
+        }
+    }
+
+    // 5秒ごとにスライド
+    setInterval(slideNews, 5000);
+    });
 
 // if (window.innerWidth <= 320) {
 //     document.querySelectorAll('p').forEach(p => {

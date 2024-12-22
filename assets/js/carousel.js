@@ -16,30 +16,30 @@ export function initCarousel() {
     }
 
     // インジケータークリック
-    indicators.forEach((indicator, i) => {
-        indicator.addEventListener('click', () => {
-            currentIndex = i;
-            showSlide(currentIndex);
-        });
-    });
+    // indicators.forEach((indicator, i) => {
+    //     indicator.addEventListener('click', () => {
+    //         currentIndex = i;
+    //         showSlide(currentIndex);
+    //     });
+    // });
 
 
-    let angle = 0;
+    // let angle = 0;
 
-    function drawCircle() {
-        if (angle < 365) {
-            angle += 2;
+    // function drawCircle() {
+    //     if (angle < 365) {
+    //         angle += 2;
 
-            // 背景画像
-            indicators.forEach(btn => {
-                btn.style.backgroundImage = `conic-gradient(transparent ${angle}deg, white ${angle + 1}deg, transparent ${angle + 2}deg)`;
-            });
+    //         // 背景画像
+    //         indicators.forEach(btn => {
+    //             btn.style.backgroundImage = `conic-gradient(transparent ${angle}deg, white ${angle + 1}deg, transparent ${angle + 2}deg)`;
+    //         });
 
-            requestAnimationFrame(drawCircle);
-        } else {
-            console.log("アニメーションが終了しました");
-        }
-    }
+    //         requestAnimationFrame(drawCircle);
+    //     } else {
+    //         console.log("アニメーションが終了しました");
+    //     }
+    // }
 
-    requestAnimationFrame(drawCircle);
+    // requestAnimationFrame(drawCircle);
 }

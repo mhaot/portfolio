@@ -34,6 +34,25 @@
     transform: translateY(-25%) rotate(135deg);
 }
 
+.c-deco__chevronLeft { /* プルダウン用、矢印down<i class="c-deco__chevronDown"></i> */
+    font-family: 'Basel', sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    text-align: right;
+    width: 7px;
+    height: 7px;
+    border: 0.1em solid currentColor;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-20%) rotate(50deg);
+}
+
+
+
+
+
 .c-deco__circl {
     height: 90px;
     width: 90px;

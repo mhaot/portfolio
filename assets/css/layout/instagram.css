@@ -17,6 +17,7 @@
     margin: 0 auto 10px;
 }
 
+
 .l-instagram__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -83,6 +84,11 @@
     width: 30px;
     border: none;
     margin: 0 auto 10px;
+}
+
+
+.l-instagram__post {
+    padding: 0 5.8%;
 }
 
 .l-instagram__list {
@@ -154,6 +160,12 @@
     margin: 0 auto 10px;
 }
 
+
+.l-instagram__post {
+    padding: 0 6%;
+}
+
+
 .l-instagram__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -164,6 +176,7 @@
     padding: 0;
     gap: 0;
     aspect-ratio: 3 / 2;
+
 }
 .l-instagram__item a img {
     aspect-ratio: 1 / 1;
