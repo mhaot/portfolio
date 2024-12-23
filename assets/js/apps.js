@@ -27,10 +27,11 @@ import { initHeader } from './header.js';
 import { initCarousel } from './carousel.js';
 import { initProducts } from './products.js';
 import { initAbout } from './about.js';
-
+import { initMain } from './main.js';
 
     initHeader();
     initCarousel();
     initProducts();
     initAbout();
+    initMain();
 
