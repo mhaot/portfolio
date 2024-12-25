@@ -1,9 +1,79 @@
 @media (max-width: 768px) {
+
+/* HTML
+  <div class="slide">
+  <img src="image1.jpg" alt="Slide 1" class="slide-image">
+  <img src="image2.jpg" alt="Slide 2" class="slide-image">
+  <img src="image3.jpg" alt="Slide 3" class="slide-image">
+</div>
+ */
+
+/* CSS
+.slide-image {
+  opacity: 0;
+  transform: scale(1.1);
+  animation: zoomOutFadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes zoomOutFadeIn {
+  0% {
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
+}
+
+.fade-in {
+  animation: zoomOutFadeIn 1.5s ease-in-out forwards;
+}
+ */
+
+/* JS
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(".slide-image");
+  images.forEach((image, index) => {
+    setTimeout(() => {
+      image.style.animationDelay = `${index * 1.5}s`;
+      image.classList.add("fade-in");
+    }, index * 1500);
+  });
+});
+
+ */
+
+
   .l-carousel {
     margin-bottom: 50px;
     color: #F5F3ED;
     position: relative;
+    overflow: hidden;
   }
+  .l-carousel::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    animation: bottom-border 1.7s linear forwards;
+  }
+
+  @keyframes bottom-border {
+    0% {
+        right: 0;
+        width: 0;
+      }
+    100% {
+      right: 0;
+      width: 100%;
+  }
+  }
+
 
 .l-carousel__slides {
     display: flex;
@@ -29,7 +99,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
   }
 
@@ -39,7 +109,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -50,7 +120,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -61,7 +131,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -73,7 +143,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -85,7 +155,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -202,7 +272,31 @@
     margin-bottom: 50px;
     color: #F5F3ED;
     position: relative;
+    overflow: hidden;
   }
+
+  .l-carousel::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    animation: bottom-border 1.7s linear forwards;
+  }
+
+  @keyframes bottom-border {
+    0% {
+        right: 0;
+        width: 0;
+      }
+    100% {
+      right: 0;
+      width: 100%;
+  }
+}
 
 .l-carousel__slides {
     display: flex;
@@ -228,7 +322,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
   }
 
@@ -238,7 +332,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -249,7 +343,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -260,7 +354,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -272,7 +366,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -284,7 +378,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
     border-top: none;
 
   }
@@ -346,6 +440,31 @@
       margin-bottom: 50px;
       color: #F5F3ED;
       position: relative;
+      overflow: hidden;
+    }
+  
+
+    .l-carousel::after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #000000;
+      bottom: 0;
+      right: 0;
+      width: 0;
+      animation: bottom-border 1.7s linear forwards;
+    }
+  
+    @keyframes bottom-border {
+      0% {
+          right: 0;
+          width: 0;
+        }
+      100% {
+        right: 0;
+        width: 100%;
+    }
     }
   
   .l-carousel__slides {
@@ -372,7 +491,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      border: 1px solid #000000;
+      /* border: 1px solid #000000; */
       border-top: none;
     }
   
@@ -382,7 +501,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      border: 1px solid #000000;
+      /* border: 1px solid #000000; */
       border-top: none;
   
     }
@@ -393,7 +512,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      border: 1px solid #000000;
+      /* border: 1px solid #000000; */
       border-top: none;
   
     }
@@ -404,7 +523,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      border: 1px solid #000000;
+      /* border: 1px solid #000000; */
       border-top: none;
   
     }
@@ -416,7 +535,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      border: 1px solid #000000;
+      /* border: 1px solid #000000; */
       border-top: none;
   
     }
@@ -428,7 +547,7 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      border: 1px solid #000000;
+      /* border: 1px solid #000000; */
       border-top: none;
   
     }
@@ -479,4 +598,4 @@
         clip-path: circle();
         z-index: 1;
     }
-  }  
+  }
