@@ -1,56 +1,11 @@
 @media (max-width: 768px) {
-
-/* HTML
-  <div class="slide">
-  <img src="image1.jpg" alt="Slide 1" class="slide-image">
-  <img src="image2.jpg" alt="Slide 2" class="slide-image">
-  <img src="image3.jpg" alt="Slide 3" class="slide-image">
-</div>
- */
-
-/* CSS
-.slide-image {
-  opacity: 0;
-  transform: scale(1.1);
-  animation: zoomOutFadeIn 1.5s ease-in-out forwards;
-}
-
-@keyframes zoomOutFadeIn {
-  0% {
-    opacity: 0;
-    transform: scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1.0);
-  }
-}
-
-.fade-in {
-  animation: zoomOutFadeIn 1.5s ease-in-out forwards;
-}
- */
-
-/* JS
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".slide-image");
-  images.forEach((image, index) => {
-    setTimeout(() => {
-      image.style.animationDelay = `${index * 1.5}s`;
-      image.classList.add("fade-in");
-    }, index * 1500);
-  });
-});
-
- */
-
-
   .l-carousel {
     margin-bottom: 50px;
     color: #F5F3ED;
     position: relative;
     overflow: hidden;
   }
+
   .l-carousel::after {
     content: '';
     position: absolute;
@@ -71,200 +26,192 @@ document.addEventListener("DOMContentLoaded", () => {
     100% {
       right: 0;
       width: 100%;
+    }
   }
+
+  .l-carousel__slides {
+      display: flex;
+      align-items: stretch;
+      height: 450px;
+      margin: 0;
+      padding: 0;
+      width: 100%;
   }
 
+  .l-carousel__slides--item {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      transform: scale(1.1);
+      transition: opacity 1600ms linear 600ms, transform 3200ms ease-out 600ms;
+  }
 
-.l-carousel__slides {
-    display: flex;
-    align-items: stretch;
-    height: 450px;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+  .l-carousel__slides--item.active {
+      opacity: 1;
+      transform: scale(1);
+  }
 
-.l-carousel__slides--item {
-  flex: 1;
-  display: flex;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
+  .l-carousel__slides--item.active:first-child {
+      transform: scale(1);
+      opacity: 0;
+      transition: opacity 1600ms linear 1200ms, transform 3200ms ease-out 600ms;
+  }
+
+  .l-carousel__slides--item.prev,
+  .l-carousel__slides--item.next {
+      opacity: 0;
+      transform: scale(1.4);
+  }
 
   .l-carousel__slides--item--present {
-    height: 450px;
-    background-image: url(/assets/images/slide01.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
+      height: 450px;
+      background-image: url(/assets/images/slide01.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
   }
 
   .l-carousel__slides--item--forest {
-    height: 450px;
-    background-image: url(/assets/images/slide02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
+      height: 450px;
+      background-image: url(/assets/images/slide02.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
   }
 
   .l-carousel__slides--item--blooming {
-    height: 450px;
-    background-image: url(/assets/images/slide03.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
+      height: 450px;
+      background-image: url(/assets/images/slide03.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
   }
 
   .l-carousel__slides--item--mask {
-    height: 450px;
-    background-image: url(/assets/images/slide04.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
+      height: 450px;
+      background-image: url(/assets/images/slide04.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
   }
-
 
   .l-carousel__slides--item--hinokiSkint {
-    height: 450px;
-    background-image: url(/assets/images/slide05.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
+      height: 450px;
+      background-image: url(/assets/images/slide05.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
   }
 
-
   .l-carousel__slides--item--leaf {
-    height: 450px;
-    background-image: url(/assets/images/slide06.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
+      height: 450px;
+      background-image: url(/assets/images/slide06.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
   }
 
   .l-carousel__slides--item button {
-    position: absolute;
-    right: 5%;
-    bottom: 3%;
+      position: absolute;
+      right: 5%;
+      bottom: 3%;
   }
 
   .l-carousel__slides--nav {
-    display: flex;
-    position: absolute;
-    left: 5%;
-    bottom: 3%;
-    background-color: transparent;
-    }
-
-    /* .c-btn__indicator {
-      width: 18px;
-      height: 18px;
-      clip-path: circle();
-      display: grid;
-      place-items: center;
-      position: relative;
+      display: flex;
+      position: absolute;
+      left: 5%;
+      bottom: 3%;
       background-color: transparent;
   }
 
-  .c-btn__indicator::after {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      background-image: conic-gradient(white 0deg, transparent 360deg);
-      clip-path: circle();
-      border-radius: 50%;
-      background-color: 1px solid #FFFFFF;
-      background-color: transparent;
-  }
+/* 2 */
+.c-btn__indicator {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-  .c-btn__indicator::before {
-      content: "";
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background-color: white;
-      clip-path: circle();
-      z-index: 1;
-  } */
-
-
-  .c-btn__indicator {
-    display: inline-block;
-    position: relative;
-    width: 18px;
-    height: 18px;
-    background-color: transparent;
-    border: 0px;
-    cursor: pointer;
-    opacity: .4;
-    transition: 400ms ease;
-    margin-right: 4px;
-    padding: 0;
-  }
-
-  .c-btn__indicator span {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 10px;
-    height: 10px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    pointer-events: none;
-  }
-
-  .c-btn__indicator svg {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    pointer-events: none;
-  }
-
-  .c-btn__indicator circle {
-    opacity: 0;
-    fill: transparent;
-    stroke: #ffffff;
-    stroke-width: 1;
-    stroke-dasharray: 0 78.5;
-    will-change: stroke-dasharray;
-    pointer-events: none;
-  }
+/* .c-btn__indicator.active {
+  background-color: #333;
+}
+*/
 
 
 
+.c-btn__indicator {
+display: inline-block;
+position: relative;
+width: 18px;
+height: 18px;
+background-color: transparent;
+border: 0px;
+cursor: pointer;
+opacity: .4;
+transition: 400ms ease;
+margin-right: 4px;
+padding: 0;
+}
 
+.c-btn__indicator span {
+display: inline-block;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+width: 10px;
+height: 10px;
+background-color: #ffffff;
+border-radius: 50%;
+pointer-events: none;
+}
+
+.c-btn__indicator svg {
+width: 18px;
+height: 18px;
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+pointer-events: none;
+}
+
+.c-btn__indicator circle {
+opacity: 0;
+fill: transparent;
+stroke: #ffffff;
+stroke-width: 1;
+stroke-dasharray: 0 78.5;
+will-change: stroke-dasharray;
+pointer-events: none;
 }
 
 
 
+
+  .u-firstSlide {
+      transform: scale(1);
+      opacity: 0;
+      transition: opacity 1600ms linear 1200ms, transform 1000ms ease-out 600ms;
+  }
+
+  .u-firstSlide.active {
+      opacity: 1;
+      transform: scale(1);
+  }
+}
 
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -322,8 +269,6 @@ document.addEventListener("DOMContentLoaded", () => {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
   }
 
   .l-carousel__slides--item--forest {
@@ -332,9 +277,6 @@ document.addEventListener("DOMContentLoaded", () => {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
   }
 
   .l-carousel__slides--item--blooming {
@@ -343,9 +285,6 @@ document.addEventListener("DOMContentLoaded", () => {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
   }
 
   .l-carousel__slides--item--mask {
@@ -354,9 +293,6 @@ document.addEventListener("DOMContentLoaded", () => {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
   }
 
 
@@ -366,9 +302,6 @@ document.addEventListener("DOMContentLoaded", () => {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
   }
 
 
@@ -378,9 +311,6 @@ document.addEventListener("DOMContentLoaded", () => {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* border: 1px solid #000000; */
-    border-top: none;
-
   }
 
   .l-carousel__slides--item button {
@@ -442,7 +372,6 @@ document.addEventListener("DOMContentLoaded", () => {
       position: relative;
       overflow: hidden;
     }
-  
 
     .l-carousel::after {
       content: '';
@@ -466,7 +395,7 @@ document.addEventListener("DOMContentLoaded", () => {
         width: 100%;
     }
     }
-  
+
   .l-carousel__slides {
       display: flex;
       align-items: stretch;
@@ -475,7 +404,7 @@ document.addEventListener("DOMContentLoaded", () => {
       padding: 0;
       width: 100%;
   }
-  
+
   .l-carousel__slides--item {
     flex: 1;
     display: flex;
@@ -484,80 +413,61 @@ document.addEventListener("DOMContentLoaded", () => {
     padding: 0;
     width: 100%;
   }
-  
+
     .l-carousel__slides--item--present {
       height: 700px;
       background-image: url(/assets/images/slide01.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      /* border: 1px solid #000000; */
-      border-top: none;
     }
-  
+
     .l-carousel__slides--item--forest {
       height: 700px;
       background-image: url(/assets/images/slide02.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      /* border: 1px solid #000000; */
-      border-top: none;
-  
     }
-  
+
     .l-carousel__slides--item--blooming {
       height: 700px;
       background-image: url(/assets/images/slide03.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      /* border: 1px solid #000000; */
-      border-top: none;
-  
     }
-  
+
     .l-carousel__slides--item--mask {
       height: 700px;
       background-image: url(/assets/images/slide04.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      /* border: 1px solid #000000; */
-      border-top: none;
-  
     }
-  
-  
+
     .l-carousel__slides--item--hinokiSkint {
       height: 700px;
       background-image: url(/assets/images/slide05.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      /* border: 1px solid #000000; */
-      border-top: none;
-  
     }
-  
-  
+
     .l-carousel__slides--item--leaf {
       height: 700px;
       background-image: url(/assets/images/slide06.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      /* border: 1px solid #000000; */
-      border-top: none;
-  
     }
-  
+
     .l-carousel__slides--item button {
       position: absolute;
       right: 5%;
       bottom: 3%;
     }
-  
+
     .l-carousel__slides--nav {
       display: flex;
       position: absolute;
@@ -566,7 +476,7 @@ document.addEventListener("DOMContentLoaded", () => {
       transform: translate(-50%, -50%);
       background-color: transparent;
       }
-  
+
       .c-btn__indicator {
         width: 18px;
         height: 18px;
@@ -576,7 +486,7 @@ document.addEventListener("DOMContentLoaded", () => {
         position: relative;
         background-color: transparent;
     }
-  
+
     .c-btn__indicator::after {
         content: "";
         position: absolute;
@@ -588,7 +498,7 @@ document.addEventListener("DOMContentLoaded", () => {
         background-color: 1px solid #FFFFFF;
         background-color: transparent;
     }
-  
+
     .c-btn__indicator::before {
         content: "";
         position: absolute;

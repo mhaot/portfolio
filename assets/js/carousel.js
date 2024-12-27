@@ -1,45 +1,42 @@
-// carousel.js
 export function initCarousel() {
-    let currentIndex = 0; // 初期インデックス設定
-    const slides = document.querySelectorAll('.l-carousel__slides--item'); // スライド要素
-    const indicators = document.querySelectorAll('.c-btn__indicator'); // インジケーター
+    const carousel = document.querySelector('.l-carousel');
+    const slides = document.querySelectorAll('.l-carousel__slides--item');
+    const indicators = document.querySelectorAll('.c-btn__indicator');
+    let currentIndex = 0;
+    const slideDelay = 7000;
 
-    // 初期スライド表示
-    showSlide(currentIndex);
+// スライドをアクティブ化する関数
+function activateSlide(index) {
+    slides.forEach((slide, i) => {
+    slide.classList.toggle('active', i === index);
+    });
+    indicators.forEach((indicator, i) => {
+    indicator.classList.toggle('active', i === index);
+    });
+}
 
-    // スライド表示
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.display = i === index ? 'block' : 'none';
-            indicators[i].classList.toggle('active', i === index);
-        });
+// DOMが読み込まれたら処理を開始
+document.addEventListener('DOMContentLoaded', () => {
+    if (!slides.length) {
+    console.error("No slides found!");
+    return;
     }
 
-    // インジケータークリック
-    // indicators.forEach((indicator, i) => {
-    //     indicator.addEventListener('click', () => {
-    //         currentIndex = i;
-    //         showSlide(currentIndex);
-    //     });
-    // });
+    // 最初のスライドを設定
+    activateSlide(currentIndex);  // ここで最初のスライドにアクティブを付ける
 
+    // 最初のボーダーアニメーションを開始
+    carousel.classList.add('animate-border');
 
-    // let angle = 0;
+    // ボーダーアニメーション後にスライドを自動で切り替え
+    setTimeout(() => {
+    carousel.classList.remove('animate-border'); // ボーダーアニメーションが終わったらクラスを削除
 
-    // function drawCircle() {
-    //     if (angle < 365) {
-    //         angle += 2;
-
-    //         // 背景画像
-    //         indicators.forEach(btn => {
-    //             btn.style.backgroundImage = `conic-gradient(transparent ${angle}deg, white ${angle + 1}deg, transparent ${angle + 2}deg)`;
-    //         });
-
-    //         requestAnimationFrame(drawCircle);
-    //     } else {
-    //         console.log("アニメーションが終了しました");
-    //     }
-    // }
-
-    // requestAnimationFrame(drawCircle);
+    // スライドの自動切り替え開始
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        activateSlide(currentIndex);
+    }, slideDelay);
+    }, 1700); // ボーダーのアニメーション時間を待つ（1.7秒）
+    });
 }
