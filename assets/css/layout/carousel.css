@@ -20,8 +20,8 @@
 
   @keyframes bottom-border {
     0% {
-        right: 0;
-        width: 0;
+      right: 0;
+      width: 0;
       }
     100% {
       right: 0;
@@ -30,187 +30,170 @@
   }
 
   .l-carousel__slides {
-      display: flex;
-      align-items: stretch;
-      height: 450px;
-      margin: 0;
-      padding: 0;
-      width: 100%;
+    display: flex;
+    align-items: stretch;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .l-carousel__slides--item {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      opacity: 0;
-      transform: scale(1.1);
-      transition: opacity 1600ms linear 600ms, transform 3200ms ease-out 600ms;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1600ms linear 600ms, transform 3200ms ease-out 600ms;
   }
 
   .l-carousel__slides--item.active {
-      opacity: 1;
-      transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
   }
 
-  .l-carousel__slides--item.active:first-child {
-      transform: scale(1);
-      opacity: 0;
-      transition: opacity 1600ms linear 1200ms, transform 3200ms ease-out 600ms;
+  .l-carousel__.no-slides .l-carousel__slides--item {
+    display: none;
   }
 
-  .l-carousel__slides--item.prev,
-  .l-carousel__slides--item.next {
-      opacity: 0;
-      transform: scale(1.4);
-  }
 
   .l-carousel__slides--item--present {
-      height: 450px;
-      background-image: url(/assets/images/slide01.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    height: 450px;
+    background-image: url(/assets/images/slide01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .l-carousel__slides--item--forest {
-      height: 450px;
-      background-image: url(/assets/images/slide02.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    height: 450px;
+    background-image: url(/assets/images/slide02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .l-carousel__slides--item--blooming {
-      height: 450px;
-      background-image: url(/assets/images/slide03.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    height: 450px;
+    background-image: url(/assets/images/slide03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .l-carousel__slides--item--mask {
-      height: 450px;
-      background-image: url(/assets/images/slide04.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    height: 450px;
+    background-image: url(/assets/images/slide04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .l-carousel__slides--item--hinokiSkint {
-      height: 450px;
-      background-image: url(/assets/images/slide05.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    height: 450px;
+    background-image: url(/assets/images/slide05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   .l-carousel__slides--item--leaf {
-      height: 450px;
-      background-image: url(/assets/images/slide06.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
+    height: 450px;
+    background-image: url(/assets/images/slide06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
-  .l-carousel__slides--item button {
-      position: absolute;
-      right: 5%;
-      bottom: 3%;
+  .l-carousel__slides > .c-btn__viewMore {
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
   }
 
   .l-carousel__slides--nav {
-      display: flex;
-      position: absolute;
-      left: 5%;
-      bottom: 3%;
-      background-color: transparent;
+    position: absolute;
+    left: 5%;
+    bottom: 3%;
+    background-color: transparent;
+    transform: translate3d(0, 0, 0);
   }
 
-/* 2 */
-.c-btn__indicator {
-  display: inline-block;
-  width: 12px;
-  height: 12px;
-  background-color: #ddd;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-/* .c-btn__indicator.active {
-  background-color: #333;
-}
-*/
-
-
-
-.c-btn__indicator {
-display: inline-block;
-position: relative;
-width: 18px;
-height: 18px;
-background-color: transparent;
-border: 0px;
-cursor: pointer;
-opacity: .4;
-transition: 400ms ease;
-margin-right: 4px;
-padding: 0;
-}
-
-.c-btn__indicator span {
-display: inline-block;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
-width: 10px;
-height: 10px;
-background-color: #ffffff;
-border-radius: 50%;
-pointer-events: none;
-}
-
-.c-btn__indicator svg {
-width: 18px;
-height: 18px;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-margin: auto;
-pointer-events: none;
-}
-
-.c-btn__indicator circle {
-opacity: 0;
-fill: transparent;
-stroke: #ffffff;
-stroke-width: 1;
-stroke-dasharray: 0 78.5;
-will-change: stroke-dasharray;
-pointer-events: none;
-}
-
-
-
-
-  .u-firstSlide {
-      transform: scale(1);
-      opacity: 0;
-      transition: opacity 1600ms linear 1200ms, transform 1000ms ease-out 600ms;
+  .c-btn__indicator {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    transition: opacity 400ms ease;
+    margin-right: 4px;
+    padding: 0;
   }
 
-  .u-firstSlide.active {
-      opacity: 1;
-      transform: scale(1);
+  .c-btn__indicator span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
   }
+
+  .c-btn__indicator svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+  }
+
+  .c-btn__indicator circle {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1;
+    stroke-dasharray: 50 50;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    transform: rotate(15deg);
+    transition: stroke-dashoffset 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+.c-btn__indicator.active circle {
+    animation: progress-animation 7s linear forwards;
+    opacity: 1;
+
+
+}
+
+@keyframes progress-animation {
+    0% {
+        stroke-dasharray: 0 50;
+    }
+    100% {
+        stroke-dasharray: 50 0;
+    }
+}
+
+.c-btn__indicator.active {
+    opacity: 1;
+}
+
+
 }
 
 
@@ -236,32 +219,45 @@ pointer-events: none;
 
   @keyframes bottom-border {
     0% {
-        right: 0;
-        width: 0;
+      right: 0;
+      width: 0;
       }
     100% {
       right: 0;
       width: 100%;
+    }
   }
-}
 
-.l-carousel__slides {
+  .l-carousel__slides {
     display: flex;
     align-items: stretch;
     height: 385px;
     margin: 0;
     padding: 0;
     width: 100%;
-}
+  }
 
-.l-carousel__slides--item {
-  flex: 1;
-  display: flex;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
+
+  .l-carousel__slides--item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1600ms linear 600ms, transform 3200ms ease-out 600ms;
+  }
+
+  .l-carousel__slides--item.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .l-carousel__.no-slides .l-carousel__slides--item {
+    display: none;
+  }
+
 
   .l-carousel__slides--item--present {
     height: 385px;
@@ -295,7 +291,6 @@ pointer-events: none;
     background-position: center;
   }
 
-
   .l-carousel__slides--item--hinokiSkint {
     height: 385px;
     background-image: url(/assets/images/slide05.jpg);
@@ -313,199 +308,284 @@ pointer-events: none;
     background-position: center;
   }
 
-  .l-carousel__slides--item button {
+  .l-carousel__slides > .c-btn__viewMore {
     position: absolute;
     right: 5%;
     bottom: 3%;
   }
 
   .l-carousel__slides--nav {
-    display: flex;
     position: absolute;
     left: 50%;
     bottom: 3%;
     transform: translate(-50%, -50%);
     background-color: transparent;
-    }
-
-    .c-btn__indicator {
-      width: 18px;
-      height: 18px;
-      clip-path: circle();
-      display: grid;
-      place-items: center;
-      position: relative;
-      background-color: transparent;
   }
 
-  .c-btn__indicator::after {
-      content: "";
-      position: absolute;
-      width: 18px;
-      height: 18px;
-      background-image: conic-gradient(white 0deg, transparent 360deg);
-      clip-path: circle();
-      border-radius: 50%;
-      background-color: 1px solid #FFFFFF;
-      background-color: transparent;
+  .c-btn__indicator {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    transition: opacity 400ms ease;
+    margin-right: 4px;
+    padding: 0;
   }
 
-  .c-btn__indicator::before {
-      content: "";
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      background-color: white;
-      clip-path: circle();
-      z-index: 1;
+  .c-btn__indicator span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
   }
 
-
+  .c-btn__indicator svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
   }
 
+  .c-btn__indicator circle {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1;
+    stroke-dasharray: 50 50;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    transform: rotate(15deg);
+    transition: stroke-dashoffset 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+  .c-btn__indicator.active circle {
+    animation: progress-animation 7s linear forwards;
+    opacity: 1;
+  }
+
+  @keyframes progress-animation {
+      0% {
+          stroke-dasharray: 0 50;
+      }
+      100% {
+          stroke-dasharray: 50 0;
+      }
+  }
+
+  .c-btn__indicator.active {
+    opacity: 1;
+  }
+
+}
 
 
-  @media (min-width: 1024px) {
-    .l-carousel {
-      margin-bottom: 50px;
-      color: #F5F3ED;
-      position: relative;
-      overflow: hidden;
-    }
+@media (min-width: 1024px) {
+  .l-carousel {
+    margin-bottom: 50px;
+    color: #F5F3ED;
+    position: relative;
+    overflow: hidden;
+  }
 
-    .l-carousel::after {
-      content: '';
-      position: absolute;
-      height: 1px;
-      width: 100%;
-      background-color: #000000;
-      bottom: 0;
+  .l-carousel::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000000;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    animation: bottom-border 1.7s linear forwards;
+  }
+
+  @keyframes bottom-border {
+    0% {
       right: 0;
       width: 0;
-      animation: bottom-border 1.7s linear forwards;
-    }
-  
-    @keyframes bottom-border {
-      0% {
-          right: 0;
-          width: 0;
-        }
-      100% {
-        right: 0;
-        width: 100%;
-    }
-    }
-
-  .l-carousel__slides {
-      display: flex;
-      align-items: stretch;
-      height: 700px;
-      margin: 0;
-      padding: 0;
+      }
+    100% {
+      right: 0;
       width: 100%;
+    }
   }
 
-  .l-carousel__slides--item {
-    flex: 1;
+  .l-carousel__slides {
     display: flex;
-    position: relative;
+    align-items: stretch;
+    height: 700px;
     margin: 0;
     padding: 0;
     width: 100%;
   }
 
-    .l-carousel__slides--item--present {
-      height: 700px;
-      background-image: url(/assets/images/slide01.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .l-carousel__slides--item--forest {
-      height: 700px;
-      background-image: url(/assets/images/slide02.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .l-carousel__slides--item--blooming {
-      height: 700px;
-      background-image: url(/assets/images/slide03.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .l-carousel__slides--item--mask {
-      height: 700px;
-      background-image: url(/assets/images/slide04.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .l-carousel__slides--item--hinokiSkint {
-      height: 700px;
-      background-image: url(/assets/images/slide05.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .l-carousel__slides--item--leaf {
-      height: 700px;
-      background-image: url(/assets/images/slide06.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
-    }
-
-    .l-carousel__slides--item button {
-      position: absolute;
-      right: 5%;
-      bottom: 3%;
-    }
-
-    .l-carousel__slides--nav {
-      display: flex;
-      position: absolute;
-      left: 50%;
-      bottom: 3%;
-      transform: translate(-50%, -50%);
-      background-color: transparent;
-      }
-
-      .c-btn__indicator {
-        width: 18px;
-        height: 18px;
-        clip-path: circle();
-        display: grid;
-        place-items: center;
-        position: relative;
-        background-color: transparent;
-    }
-
-    .c-btn__indicator::after {
-        content: "";
-        position: absolute;
-        width: 18px;
-        height: 18px;
-        background-image: conic-gradient(white 0deg, transparent 360deg);
-        clip-path: circle();
-        border-radius: 50%;
-        background-color: 1px solid #FFFFFF;
-        background-color: transparent;
-    }
-
-    .c-btn__indicator::before {
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background-color: white;
-        clip-path: circle();
-        z-index: 1;
-    }
+  .l-carousel__slides--item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1.1);
+    transition: opacity 1600ms linear 600ms, transform 3200ms ease-out 600ms;
   }
+
+  .l-carousel__slides--item.active {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .l-carousel__.no-slides .l-carousel__slides--item {
+    display: none;
+  }
+
+
+  .l-carousel__slides--item--present {
+    height: 700px;
+    background-image: url(/assets/images/slide01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .l-carousel__slides--item--forest {
+    height: 700px;
+    background-image: url(/assets/images/slide02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .l-carousel__slides--item--blooming {
+    height: 700px;
+    background-image: url(/assets/images/slide03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .l-carousel__slides--item--mask {
+    height: 700px;
+    background-image: url(/assets/images/slide04.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .l-carousel__slides--item--hinokiSkint {
+    height: 700px;
+    background-image: url(/assets/images/slide05.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .l-carousel__slides--item--leaf {
+    height: 700px;
+    background-image: url(/assets/images/slide06.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .l-carousel__slides > .c-btn__viewMore {
+    position: absolute;
+    right: 5%;
+    bottom: 3%;
+  }
+
+  .l-carousel__slides--nav {
+    position: absolute;
+    left: 50%;
+    bottom: 3%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+  }
+
+  .c-btn__indicator {
+    display: inline-block;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    transition: opacity 400ms ease;
+    margin-right: 4px;
+    padding: 0;
+  }
+
+  .c-btn__indicator span {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    pointer-events: none;
+  }
+
+  .c-btn__indicator svg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+  }
+
+  .c-btn__indicator circle {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 1;
+    stroke-dasharray: 50 50;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    transform: rotate(15deg);
+    transition: stroke-dashoffset 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+
+.c-btn__indicator.active circle {
+    animation: progress-animation 7s linear forwards;
+    opacity: 1;
+}
+
+@keyframes progress-animation {
+    0% {
+        stroke-dasharray: 0 50;
+    }
+    100% {
+        stroke-dasharray: 50 0;
+    }
+}
+
+.c-btn__indicator.active {
+    opacity: 1;
+}
+
+}

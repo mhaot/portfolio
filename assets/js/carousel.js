@@ -5,38 +5,40 @@ export function initCarousel() {
     let currentIndex = 0;
     const slideDelay = 7000;
 
-// スライドをアクティブ化する関数
-function activateSlide(index) {
-    slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-    });
-    indicators.forEach((indicator, i) => {
-    indicator.classList.toggle('active', i === index);
-    });
-}
+    function activateSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
 
-// DOMが読み込まれたら処理を開始
-document.addEventListener('DOMContentLoaded', () => {
-    if (!slides.length) {
-    console.error("No slides found!");
-    return;
+        indicators.forEach((indicator, i) => {
+            if (i === index) {
+                indicator.classList.add('active');
+                resetIndicatorAnimation(indicator);
+            } else {
+                indicator.classList.remove('active');
+            }
+        });
     }
 
-    // 最初のスライドを設定
-    activateSlide(currentIndex);  // ここで最初のスライドにアクティブを付ける
+    function resetIndicatorAnimation(indicator) {
+        const circle = indicator.querySelector('circle');
+        circle.style.animation = 'none';
+        requestAnimationFrame(() => {
+            circle.style.animation = '';
+        });
+    }
 
-    // 最初のボーダーアニメーションを開始
-    carousel.classList.add('animate-border');
+    document.addEventListener('DOMContentLoaded', () => {
+        if (!slides.length) {
+            console.error("No slides found!");
+            return;
+        }
 
-    // ボーダーアニメーション後にスライドを自動で切り替え
-    setTimeout(() => {
-    carousel.classList.remove('animate-border'); // ボーダーアニメーションが終わったらクラスを削除
-
-    // スライドの自動切り替え開始
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % slides.length;
         activateSlide(currentIndex);
-    }, slideDelay);
-    }, 1700); // ボーダーのアニメーション時間を待つ（1.7秒）
+
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            activateSlide(currentIndex);
+        }, slideDelay);
     });
 }

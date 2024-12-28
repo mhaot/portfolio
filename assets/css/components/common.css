@@ -49,14 +49,12 @@
     transform: translateY(-20%) rotate(50deg);
 }
 
-
-
-
-
 .c-deco__circl {
     height: 90px;
     width: 90px;
     border: none;
+    border-radius: 50%;
+    background-color: #F5F3ED;
 }
 
 .c-deco__iconBlank { /* 外部アイコン<i class="c-deco__iconBlank"></i> */
@@ -118,166 +116,6 @@
     text-decoration: none;
 }
 
-/*
-.c-btn__indicator {
-    position: relative;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    text-align: center;
-    border: 0px;
-    cursor: pointer;
-    opacity: 0.4;
-    transition: 400ms ease;
-    margin-right: 4px;
-    padding: 2px;
-
-} */
-/* .c-btn__indicator:hover,
-.c-btn__indicator.active {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: 24px;
-    height: 24px;
-    border: 2px solid rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    animation: spin 0.6s linear;
-} */
-
-/* @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-} */
-
-/* .c-btn__indicator {
-    position: relative;
-    width: 20px;インジケーターの大きさ
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    border: 2px solid #000; インジケーターの枠線
-    overflow: hidden;
-}
-
-.c-btn__indicator::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 2px solid #000;
-    border-radius: 50%;
-    animation: circleAnimation 2s linear infinite;
-    opacity: 0;
-} */
-
-/* .c-btn__indicator {
-    position: relative;
-    width: 20px;ボタンの幅
-    height: 20px; ボタンの高さ
-    border-radius: 50%; 丸い形
-    background-color: white; ボタンの背景色
-    border: 2px solid transparent; 外枠は透明
-    transition: all 0.3s ease; アニメーションの速度
-}
-
-.c-btn__indicator::before {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: 1px solid transparent;
-    background: transparent;
-    transition: all 0.3s ease;
-    z-index: -1; ボタンの下に配置
-}
-
-.c-btn__indicator:hover::before {
-    border-color: #333; 線の色
-    animation: rotate-ring 1s linear infinite; アニメーション
-}*/
-
-
-/* .c-btn__indicator:hover::before {
-    opacity: 1;
-    animation-play-state: running; ホバー時にアニメーション開始
-}
-
-@keyframes circleAnimation {
-    0% {
-        transform: scale(1) rotate(0deg);
-    }
-    100% {
-        transform: scale(1) rotate(360deg);
-    }
-}
- */
-
-
-
-@keyframes pulseMotion {
-    0% {
-    transform: translate(-50%, -50%) scale(1, 1);
-    background-color: rgba(251, 249, 247, 0.7)
-}
-100% {
-    transform: translate(-50%, -50%) scale(4.5, 4.5);
-    background-color: rgba(251, 249, 247, 0.2)
-}
-}
-
-
-
-/* .c-btn__indicator {
-    display: block;
-    position: relative;
-    width: 10px;
-    height: 10px;
-    margin: 7px;
-    background-color: #ffffff;
-    border: 2px solid transparent;
-    border-radius: 50%;
-    transition: background-color cubic-bezier(0.215, 0.61, 0.355, 1) .3s;
-    cursor: pointer;
-} */
-
-
-/* .c-btn__indicator:active {
-background-color: #ffffff;
-}
-
-.c-btn__indicator:focus {
-outline: none;
-}
-
-.c-btn__indicator::after {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    transition: opacity linear 0.3s;
-    content: '';
-}
-
-.c-btn__indicator:active::after {
-    animation: pulseMotion 1.4s linear infinite;
-} */
 
 /* slide */
 /* slide01 */
@@ -456,16 +294,30 @@ outline: none;
     margin: 0px auto;
     box-sizing: border-box;
 }
+
 .c-text__captionWithLink::before {
-    display: block;
+    content: '';
     position: absolute;
     top: 0px;
     left: 0px;
+    bottom: 0;
     width: 1px;
-    height: 100%;
-    background-color: #000;
-    content: "";
+    height: 0;
+    background-color: #000000;
+    animation: verticalーborder 1.7s linear forwards;
+}
 
+@keyframes verticalーborder {
+    0% {
+        height: 0;
+        }
+    100% {
+        height: 100%;
+    }
+}
+.c-text__captionWithLink.-show::before {
+    height: 100%;
+    transition: height 0.5s ease-in-out;
 }
 
 /* img */
@@ -479,15 +331,11 @@ outline: none;
 @media (max-width: 768px) {
 
     .c-img__mainTopHero {
-        /* width: 293px;
-        height: 293px; */
         aspect-ratio: 1 / 1;
         width: 100%;
     }
 
     .c-img__mainSubHero {
-        /* width: 320px;
-        height: 320px; */
         margin-bottom: 40px;
         aspect-ratio: 1 / 1;
     }
@@ -495,14 +343,10 @@ outline: none;
 
 @media (min-width: 769px) and (max-width: 1023px) {
     .c-img__mainTopHero {
-        /* width: 293px;
-        height: 293px; */
         aspect-ratio: 1 / 1;
     }
 
     .c-img__mainSubHero {
-        /* width: 320px;
-        height: 320px; */
         margin-bottom: 40px;
         aspect-ratio: 1 / 1;
     }
@@ -511,8 +355,6 @@ outline: none;
 @media (min-width: 1024px) {
 
     .c-img__mainTopHero {
-        /* width: 935px;
-        height: 935px; */
         aspect-ratio: 1 / 1;
     }
 

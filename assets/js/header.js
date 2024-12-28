@@ -1,5 +1,3 @@
-// header.js
-
 // .l-header__drawer
 export function initHeader() {
     const drawerItems = [
@@ -42,33 +40,27 @@ export function initHeader() {
             navContainer.appendChild(listItem);
         });
     }
-    // DOMが完全に読み込まれた後に実行
     document.addEventListener('DOMContentLoaded', () => {
-        generateDrawerNav(); // ドロワーリストを生成
-        console.log('DOM読み込み確認');
+        generateDrawerNav();
     });
-
 
 
     // .l-header__top
     document.addEventListener('DOMContentLoaded', function () {
     const newsList = document.querySelector('.l-header__news');
     let newsItems = document.querySelectorAll('.l-header__news li');
-    const itemHeight = newsItems[0].offsetHeight; // 各お知らせの高さ
+    const itemHeight = newsItems[0].offsetHeight;
     let index = 0;
 
-    // 各 li にアイコンを追加
     newsItems.forEach(item => {
         const icon = document.createElement('i');
         icon.className = 'c-deco__chevronLeft';
         item.appendChild(icon);
     });
 
-    // 最後のアイテムをクローンして最初に追加
     const lastItemClone = newsItems[newsItems.length - 1].cloneNode(true);
     newsList.insertBefore(lastItemClone, newsItems[0]);
 
-    // クローン追加後、再取得
     newsItems = document.querySelectorAll('.l-header__news li');
 
     function slideNews() {
@@ -77,16 +69,13 @@ export function initHeader() {
         newsList.style.transform = `translateY(-${index * itemHeight}px)`;
 
         if (index === newsItems.length - 1) {
-        // 最後のスライドが終わったら、最初に戻る
         setTimeout(() => {
             newsList.style.transition = 'none';
             newsList.style.transform = `translateY(0)`;
             index = 0;
-        }, 2500); // スライドが終わるタイミングと合わせる
+        }, 2500);
         }
     }
-
-    // 5秒ごとにスライド
     setInterval(slideNews, 5000);
     });
 
