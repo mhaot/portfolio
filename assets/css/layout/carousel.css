@@ -61,7 +61,7 @@
 
   .l-carousel__slides--item--present {
     height: 450px;
-    background-image: url(/assets/images/slide01.jpg);
+    background-image: url(../../images/slide01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

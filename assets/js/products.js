@@ -64,6 +64,27 @@ export function initProducts() {
         generateProductMenu();
         console.log('productDOM読み込み確認');
     });
+
+        // .l-products__menu の横線アニメーション
+        const products = document.querySelector(".l-products__menu");
+        if (products) {
+            const productsOptions = {
+                root: null,
+                rootMargin: "0px 0px 300px 0px",
+                threshold: 0.1,
+            };
+            const productsCallback = (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        products.classList.add("-show");
+                    }
+                });
+            };
+            const productsObserver = new IntersectionObserver(productsCallback, productsOptions);
+            productsObserver.observe(products);
+        }
+
+
 }
 
 
