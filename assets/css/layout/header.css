@@ -78,6 +78,12 @@
         justify-content: center;
         text-align: center;
         flex-grow: 1;
+        font-size: 22px;
+        /* font-family: 'Basel', sans-serif; */
+        font-family: "Roboto", sans-serif;
+        font-weight: 450;
+        letter-spacing: 0.05em;
+
     }
 
     .l-header__drawerTitle {
@@ -86,6 +92,11 @@
         text-align: center;
         flex-grow: 1;
         margin: 0 0 40px;
+        font-size: 22px;
+        /* font-family: 'Basel', sans-serif; */
+        font-family: "Roboto", sans-serif;
+        font-weight: 450;
+        letter-spacing: 0.05em;
     }
 
     #drawer-toggle {
@@ -206,6 +217,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 12px;
     }
 
     .l-header__drawerBtns > button {
@@ -218,6 +230,8 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        font-size: 14px;
+
     }
 
     .l-header__drawerBottom > ul > li {
@@ -328,6 +342,11 @@
         justify-content: center;
         text-align: center;
         flex-grow: 1;
+        font-size: 33px;
+        /* font-family: 'Basel', sans-serif; */
+        font-family: "Roboto", sans-serif;
+        font-weight: 450;
+        letter-spacing: 0.05em;
     }
 
     .l-header__drawerTitle {
@@ -336,6 +355,11 @@
         text-align: center;
         flex-grow: 1;
         margin: 0 0 40px;
+        font-size: 22px;
+        /* font-family: 'Basel', sans-serif; */
+        font-family: "Roboto", sans-serif;
+        font-weight: 450;
+        letter-spacing: 0.05em;
     }
 
     #drawer-toggle {
@@ -451,6 +475,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 12px;
     }
 
     .l-header__drawerBtns > button {
@@ -463,6 +488,8 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        font-size: 14px;
+
     }
 
     .l-header__drawerBottom > ul > li {
@@ -574,6 +601,12 @@
         justify-content: center;
         text-align: center;
         flex-grow: 1;
+        font-size: 30px;
+        /* font-family: 'Basel', sans-serif; */
+        font-family: "Roboto", sans-serif;
+        font-weight: 450;
+        letter-spacing: 0.05em;
+
     }
 
     .l-header__drawerTitle {
@@ -582,6 +615,12 @@
         text-align: center;
         flex-grow: 1;
         margin: 0 0 40px;
+        font-size: 22px;
+        /* font-family: 'Basel', sans-serif; */
+        font-family: "Roboto", sans-serif;
+        font-weight: 450;
+        letter-spacing: 0.05em;
+
     }
 
     #drawer-toggle {
@@ -694,6 +733,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 12px;
+
     }
 
     .l-header__drawerBtns > button {
@@ -706,6 +747,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        font-size: 14px;
     }
 
     .l-header__drawerBottom > ul > li {

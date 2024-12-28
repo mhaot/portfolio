@@ -13,6 +13,7 @@
     .l-memberShip__deco .c-deco__circl:nth-child(1) {
         transition-duration: 2s;
         transform: translateX(-150px) rotateZ(-340deg);
+
     }
 
     .l-memberShip__deco .c-deco__circl:nth-child(2) {
@@ -52,9 +53,16 @@
         margin: 0 20.7% 32px;
     }
 
+    .l-memberShip__deco img {
+        height: 110px;
+        width: 110px;
+        }
+
     .l-memberShip__deco .c-deco__circl:nth-child(1) {
         transition-duration: 2s;
         transform: translateX(-150px) rotateZ(-340deg);
+        transition-delay: 1000ms;
+
     }
 
     .l-memberShip__deco .c-deco__circl:nth-child(2) {
@@ -116,9 +124,18 @@
         margin: 0 auto 32px;
     }
 
+    .l-memberShip__deco img {
+        height: 150px;
+        width: 150px;
+        }
+
+
+
     .l-memberShip__deco .c-deco__circl:nth-child(1) {
         transition-duration: 2s;
         transform: translateX(-150px) rotateZ(-340deg);
+        transition-delay: 2000ms;
+
     }
 
     .l-memberShip__deco .c-deco__circl:nth-child(2) {
