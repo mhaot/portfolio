@@ -1,17 +1,15 @@
 @media (max-width: 768px) {
-
 .l-main__top--title {
     text-align: center;
     margin: 40px 70px 100px;
-
 }
+
 .l-main__top--title p {
     margin-bottom: 10px;
 }
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
-
 .l-main__sub {
     display: flex;
     justify-content: space-between;
@@ -26,13 +24,13 @@
 
 .l-main__top--title {
     text-align: center;
-    margin: 40px 70px 100px;
-
+    /* margin: 40px 70px 100px; */
+    margin-bottom: 160px;
 }
 
 .l-main__top--title p {
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .l-main__top--title h2 {
@@ -44,28 +42,26 @@
 }
 
 
-
 }
 
 
 @media (min-width: 1024px) {
-
 .l-main__sub {
     display: flex;
     justify-content: space-between;
     padding: 5%;
 }
 
-
 .l-main__top--title {
     text-align: center;
     margin: 40px 70px 100px;
-
 }
+
 .l-main__top--title p {
     font-size: 18px;
-    margin-bottom: 35px;
+    margin-bottom: px;
 }
+
 .l-main__top--title h2 {
     font-size: 65px;
 }

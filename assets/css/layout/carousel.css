@@ -203,6 +203,7 @@
     color: #F5F3ED;
     position: relative;
     overflow: hidden;
+    margin-bottom: 120px;
   }
 
   .l-carousel::after {

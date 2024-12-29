@@ -1,7 +1,11 @@
 @media (max-width: 768px) {
     .l-storesSectionOnline {
-    margin-bottom: 80px;
+        margin-bottom: 80px;
 }
+    .l-storesSectionOnline picture {
+        margin-bottom: 40px;
+}
+
 }
 
 
@@ -9,14 +13,21 @@
     .l-storesSectionOnline {
         margin-bottom: 80px;
         width: calc((100% - 10%) / 2);
-    
+        padding-top: 80px;
+
+    }
+    .l-storesSectionOnline picture {
+        margin-bottom: 40px;
+    }
+    .l-storesSectionOnline picture p {
+        font-weight: normal;
+        font-size: 180%;
     }
 
-    /* .l-storesSectionOnline img{
-        height: 360px;
-        width: 360px;
-    } */
-
+    .l-storesSectionOnline picture p:nth-of-type(2) {
+        font-size: 90%;
+        margin-top: 2%;
+    }
 
 }
 
@@ -26,6 +37,20 @@
     margin-bottom: 80px;
     flex-grow: 1;
     width: 40.14658%;
+    padding-top: 80px;
 
 }
+.l-storesSectionOnline picture {
+    margin-bottom: 40px;
+}
+.l-storesSectionOnline picture p {
+    font-weight: normal;
+    font-size: 180%;
+}
+
+.l-storesSectionOnline picture p:nth-of-type(2) {
+    font-size: 90%;
+    margin-top: 2%;
+}
+
 }

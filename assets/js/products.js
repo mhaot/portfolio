@@ -1,5 +1,5 @@
 // window.addEventListener('scroll', function() {
-//     const element = document.querySelector('.l-products__discription');
+//     const element = document.querySelector('.l-products__description');
 //     const scrollPosition = window.scrollY || document.documentElement.scrollTop;
 //     const triggerPosition = 100;
 
@@ -85,7 +85,18 @@ export function initProducts() {
         }
 
 
-}
+        window.addEventListener('scroll', function() {
+            const productsLine = document.querySelector('.l-products__description');
+            const rect = productsLine.getBoundingClientRect();
 
+            // 要素が画面に表示されたらアニメーションを開始
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                productsLine.classList.add('scrolled');
+            } else {
+                productsLine.classList.remove('scrolled');
+            }
+        });
+
+    }
 
 

@@ -55,6 +55,21 @@ export function initAbout() {
         generateAboutMenu();
         console.log('aboutDOM読み込み確認');
     });
+
+
+
+    window.addEventListener('scroll', function() {
+        const aboutLine = document.querySelector('.l-about__description');
+        const rect = aboutLine.getBoundingClientRect();
+
+        // 要素が画面に表示されたらアニメーションを開始
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            aboutLine.classList.add('scrolled');
+        } else {
+            aboutLine.classList.remove('scrolled');
+        }
+    });
+
 }
 
 

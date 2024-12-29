@@ -6,8 +6,8 @@
         height: 100%;
     }
 
-
     .l-about__hero {
+        z-index: 1;
         padding-left: 8%;
     }
 
@@ -15,21 +15,93 @@
         font-weight: normal;
     }
 
-
     .l-about__description {
-        padding: 32px;
-        border: 1px solid #000000;
+        position: relative;
+        display: inline-block;
+        margin-top: -16vw;
         margin-bottom: 60px;
-        aspect-ratio: 1.37 / 1;
-        line-height: 22px;
-        margin-right: 25%;
+        padding-top: 16vw;
+        width: 75.46667vw;
+    }
 
+    .l-about__description::before,
+    .l-about__description::after,
+    .l-about__description span::before {
+        content: '';
+        position: absolute;
+        background-color: transparent;
+        transition: all 1.7s ease-in-out;
+        background-color: #000000;
+    }
+
+    .l-about__description::before,
+    .l-about__description::after {
+        width: 0;
+        height: 1px;
+    }
+
+    .l-about__description span::before {
+        width: 1px;
+        height: 0;
+    }
+
+    .l-about__description.scrolled::before {
+        animation: top-border 3s ease-in-out forwards;
+    }
+
+    .l-about__description.scrolled::after {
+        animation: bottom-border 1.7s ease-in-out forwards;
+    }
+
+    .l-about__description.scrolled span::before {
+        animation: right-border 1.7s ease-in-out forwards;
+    }
+
+    @keyframes top-border {
+        0% {
+            top: 0;
+            left: 0;
+            width: 0;
+        }
+        100% {
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    @keyframes bottom-border {
+        0% {
+            right: 0;
+            width: 0;
+        }
+        100% {
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    @keyframes right-border {
+        0% {
+            bottom: 0;
+            right: 0;
+            height: 0;
+        }
+        100% {
+            bottom: 0;
+            right: 0;
+            height: 100%;
+        }
+    }
+
+    .l-about__description p{
+        padding: 32px;
+        line-height: 22px;
     }
 
     .l-about__menu {
         margin: 0 8.8%;
     }
-
 
     .l-about__list {
         justify-content: space-between;
@@ -40,9 +112,7 @@
 
     .l-about__item {
         width: calc((100% - 4%) / 2);
-
     }
-
 
     .l-about__item:nth-child(2n) {
         margin-bottom: 40px;
@@ -65,11 +135,15 @@
     }
 
     .l-about__hero {
-        padding-left: 23.2%;
+        padding-left: 28%;
         }
 
     .l-about__hero picture p {
         font-weight: normal;
+        font-size: 250%;
+    }
+    .l-about__hero picture p:nth-of-type(2) {
+        font-size: 95%;
     }
 
     .l-about__description {
@@ -93,7 +167,6 @@
 
     .l-about__item {
         width: calc((100% - 11%) / 2);
-
     }
 
     .l-about__item:nth-child(2n) {
@@ -104,22 +177,19 @@
     .l-about__item:nth-child(2n-1) {
         padding-top: 32px;
         /* margin-right: 10%; */
-
     }
 
 }
 
 
 @media (min-width: 1024px) {
-
-
     .l-about {
+        
         display: flex;
         flex-direction: column;
         position: relative;
         height: 100%;
     }
-
 
     .l-about__hero {
         margin-left: 30%;
@@ -128,7 +198,6 @@
     .l-about__hero picture p {
         font-weight: normal;
     }
-
 
     .l-about__description {
         width: 40%;
@@ -143,35 +212,33 @@
         margin: 0 6.25%;
     }
 
-.l-about__list {
-    justify-content: left;
-    padding: 0 0 160px;
-    display: flex;
-    flex-wrap: wrap;
-}
+    .l-about__list {
+        justify-content: left;
+        padding: 0 0 160px;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.l-about__item {
-    width: calc((100% - 12.5%) / 3);
-    padding: 0;
-    margin: 0;
+    .l-about__item {
+        width: calc((100% - 12.5%) / 3);
+        padding: 0;
+        margin: 0;
+    }
 
-}
-
-.l-about__item:nth-child(1), .l-about__item:nth-child(4) {
-    margin-right: 6%;
-}
+    .l-about__item:nth-child(1), .l-about__item:nth-child(4) {
+        margin-right: 6%;
+    }
 
 
-.l-about__item:nth-child(2), .l-about__item:nth-child(5) {
-    margin-right: 6%;
-    padding-top: 4%;
+    .l-about__item:nth-child(2), .l-about__item:nth-child(5) {
+        margin-right: 6%;
+        padding-top: 4%;
+    }
 
-}
-
-.l-about__item:nth-child(3), .l-about__item:nth-child(6) {
-    margin-right: 0;
-    padding-top: 8%;
-}
+    .l-about__item:nth-child(3), .l-about__item:nth-child(6) {
+        margin-right: 0;
+        padding-top: 8%;
+    }
 
     }
 

@@ -60,6 +60,7 @@
     display: none;
 }
 
+
 }
 
 @media (min-width: 769px) and (max-width: 1023px) {
@@ -73,6 +74,9 @@
     margin-top: 40px;
     margin-bottom: 45px;
 
+}
+.l-footer__title h2 {
+    font-size: 30px;
 }
 
 /* .c-sns__nav {
@@ -141,6 +145,10 @@
     margin-bottom: 45px;
 
 }
+.l-footer__title h2 {
+    font-size: 30px;
+}
+
 
 /* .c-sns__nav {
     display: flex;
