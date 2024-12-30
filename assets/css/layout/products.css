@@ -117,22 +117,21 @@
     position: absolute;
     bottom: 0;
     height: 1px;
-    background-color: #000000;
     width: 0;
-    animation: none;
-    transition: width 1.5s (0.25, 1, 0.5, 1);
+    background-color: #000000;
+    transition: all 1.7s ease-in-out;
 }
 
 .l-products__menu::before {
     left: 50%;
     transform: translateX(-50%);
-    animation: horizontal-border-left 1s ease-out forwards;
+    animation: horizontal-border-left 1.7s ease-out forwards;
 }
 
 .l-products__menu::after {
     right: 50%;
     transform: translateX(50%);
-    animation: horizontal-border-right 1s ease-out forwards;
+    animation: horizontal-border-right 1.7s ease-out forwards;
 }
 
 @keyframes horizontal-border-left {
@@ -140,7 +139,7 @@
         width: 0;
     }
     100% {
-        width: 100%;
+        width: 80%; /* 半分の幅を指定 */
     }
 }
 
@@ -149,14 +148,16 @@
         width: 0;
     }
     100% {
-        width:  100%;
+        width: 80%; /* 半分の幅を指定 */
     }
 }
 
-.l-products__menu.-show::after, .l-products__menu.-show::before {
-    width: 100%;
-    transition: width 1.5s (0.25, 1, 0.5, 1);
+.l-products__menu.scrolled::before {
+    animation: horizontal-border-left 1.7s ease-in-out forwards;
+}
 
+.l-products__menu.scrolled::after {
+    animation: horizontal-border-right 1.7s ease-in-out forwards;
 }
 
 
@@ -309,22 +310,21 @@
     position: absolute;
     bottom: 0;
     height: 1px;
-    background-color: #000000;
     width: 0;
-    animation: none;
-    transition: width 1.5s (0.25, 1, 0.5, 1);
+    background-color: #000000;
+    transition: all 1.7s ease-in-out;
 }
 
 .l-products__menu::before {
     left: 50%;
     transform: translateX(-50%);
-    animation: horizontal-border-left 1s ease-out forwards;
+    animation: horizontal-border-left 1.7s ease-out forwards;
 }
 
 .l-products__menu::after {
     right: 50%;
     transform: translateX(50%);
-    animation: horizontal-border-right 1s ease-out forwards;
+    animation: horizontal-border-right 1.7s ease-out forwards;
 }
 
 @keyframes horizontal-border-left {
@@ -332,7 +332,7 @@
         width: 0;
     }
     100% {
-        width: 100%;
+        width: 80%; /* 半分の幅を指定 */
     }
 }
 
@@ -341,16 +341,17 @@
         width: 0;
     }
     100% {
-        width:  100%;
+        width: 80%; /* 半分の幅を指定 */
     }
 }
 
-.l-products__menu.-show::after, .l-products__menu.-show::before {
-    width: 100%;
-    transition: width 1.5s (0.25, 1, 0.5, 1);
-
+.l-products__menu.scrolled::before {
+    animation: horizontal-border-left 1.7s ease-in-out forwards;
 }
 
+.l-products__menu.scrolled::after {
+    animation: horizontal-border-right 1.7s ease-in-out forwards;
+}
 
 
 .l-products__list {
@@ -399,7 +400,7 @@
     flex-direction: column;
     position: relative;
     height: 100%;
-    margin-bottom: 40%;
+    margin-bottom: 160px;
 }
 
 
@@ -508,29 +509,27 @@
     margin: 0 6.25%;
 }
 
-
 .l-products__menu::before,
 .l-products__menu::after {
     content: '';
     position: absolute;
     bottom: 0;
     height: 1px;
-    background-color: #000000;
     width: 0;
-    animation: none;
-    transition: width 1.5s (0.25, 1, 0.5, 1);
+    background-color: #000000;
+    transition: all 1.7s ease-in-out;
 }
 
 .l-products__menu::before {
     left: 50%;
     transform: translateX(-50%);
-    animation: horizontal-border-left 1s ease-out forwards;
+    animation: horizontal-border-left 1.7s ease-out forwards;
 }
 
 .l-products__menu::after {
     right: 50%;
     transform: translateX(50%);
-    animation: horizontal-border-right 1s ease-out forwards;
+    animation: horizontal-border-right 1.7s ease-out forwards;
 }
 
 @keyframes horizontal-border-left {
@@ -538,7 +537,7 @@
         width: 0;
     }
     100% {
-        width: 100%;
+        width: 80%; /* 半分の幅を指定 */
     }
 }
 
@@ -547,15 +546,18 @@
         width: 0;
     }
     100% {
-        width:  100%;
+        width: 80%; /* 半分の幅を指定 */
     }
 }
 
-.l-products__menu.-show::after, .l-products__menu.-show::before {
-    width: 100%;
-    transition: width 1.5s (0.25, 1, 0.5, 1);
-
+.l-products__menu.scrolled::before {
+    animation: horizontal-border-left 1.7s ease-in-out forwards;
 }
+
+.l-products__menu.scrolled::after {
+    animation: horizontal-border-right 1.7s ease-in-out forwards;
+}
+
 
 
 

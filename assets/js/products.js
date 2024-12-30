@@ -65,37 +65,31 @@ export function initProducts() {
         console.log('productDOM読み込み確認');
     });
 
-        // .l-products__menu の横線アニメーション
-        const products = document.querySelector(".l-products__menu");
-        if (products) {
-            const productsOptions = {
-                root: null,
-                rootMargin: "0px 0px 300px 0px",
-                threshold: 0.1,
-            };
-            const productsCallback = (entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        products.classList.add("-show");
-                    }
-                });
-            };
-            const productsObserver = new IntersectionObserver(productsCallback, productsOptions);
-            productsObserver.observe(products);
-        }
 
 
         window.addEventListener('scroll', function() {
             const productsLine = document.querySelector('.l-products__description');
             const rect = productsLine.getBoundingClientRect();
 
-            // 要素が画面に表示されたらアニメーションを開始
             if (rect.top < window.innerHeight && rect.bottom >= 0) {
                 productsLine.classList.add('scrolled');
             } else {
                 productsLine.classList.remove('scrolled');
             }
         });
+
+        window.addEventListener('scroll', function() {
+            const productsMenuLine = document.querySelector('.l-products__menu');
+            const rect = productsMenuLine.getBoundingClientRect();
+
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                productsMenuLine.classList.add('scrolled');
+            } else {
+                productsMenuLine.classList.remove('scrolled');
+            }
+        });
+
+
 
     }
 

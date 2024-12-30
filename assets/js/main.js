@@ -41,29 +41,19 @@ export function initMain(){
 
 
 export function initCaptionWithLinkAnimation() {
-    document.addEventListener("DOMContentLoaded", () => {
-        const caption = document.querySelector(".c-text__captionWithLink");
+    window.addEventListener('scroll', function() {
+        const CaptionWithLinkLine = document.querySelector('.c-text__captionWithLink');
+        const rect = CaptionWithLinkLine.getBoundingClientRect();
 
-        // Intersection Observerのオプション
-        const options = {
-            root: null, // ビューポートを基準に監視
-            rootMargin: "0px", // 余白なし
-            threshold: 0.5, // 要素が50%見えたら発火
-        };
-
-        // Intersection Observerのコールバック関数
-        const callback = (entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    // 要素がビューポートに入ったらクラスを追加
-                    caption.classList.add("-show");
-                }
-            });
-        };
-
-        // Intersection Observerを作成してターゲットを監視
-        const observer = new IntersectionObserver(callback, options);
-        observer.observe(caption);
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            CaptionWithLinkLine.classList.add('scrolled');
+        } else {
+            CaptionWithLinkLine.classList.remove('scrolled');
+        }
     });
+
 }
+
+
+
 
