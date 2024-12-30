@@ -135,6 +135,7 @@
     }
 
     .l-about__hero {
+        z-index: 1;
         padding-left: 28%;
         }
 
@@ -147,11 +148,87 @@
     }
 
     .l-about__description {
+        position: relative;
+        display: inline-block;
+        margin-top: -100px;
+        margin-bottom: 80px;
+        padding: 100px 0px 0px;
+        width: calc(100% - 120px);
+    }
+
+    .l-about__description::before,
+    .l-about__description::after,
+    .l-about__description span::before {
+        content: '';
+        position: absolute;
+        background-color: transparent;
+        transition: all 1.7s ease-in-out;
+        background-color: #000000;
+    }
+
+    .l-about__description::before,
+    .l-about__description::after {
+        width: 0;
+        height: 1px;
+    }
+
+    .l-about__description span::before {
+        width: 1px;
+        height: 0;
+    }
+
+    .l-about__description.scrolled::before {
+        animation: top-border 3s ease-in-out forwards;
+    }
+
+    .l-about__description.scrolled::after {
+        animation: bottom-border 1.7s ease-in-out forwards;
+    }
+
+    .l-about__description.scrolled span::before {
+        animation: right-border 1.7s ease-in-out forwards;
+    }
+
+    @keyframes top-border {
+        0% {
+            top: 0;
+            left: 0;
+            width: 0;
+        }
+        100% {
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    @keyframes bottom-border {
+        0% {
+            right: 0;
+            width: 0;
+        }
+        100% {
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    @keyframes right-border {
+        0% {
+            bottom: 0;
+            right: 0;
+            height: 0;
+        }
+        100% {
+            bottom: 0;
+            right: 0;
+            height: 100%;
+        }
+    }
+
+    .l-about__description p{
         padding: 40px 44px;
-        border: 1px solid #000000;
-        margin-bottom: 60px;
         line-height: 22px;
-        margin-right: 15.8%;
     }
 
     .l-about__menu {
@@ -174,17 +251,16 @@
         padding-top: 32px;
     }
 
-    .l-about__item:nth-child(2n-1) {
+    /* .l-about__item:nth-child(2n-1) {
         padding-top: 32px;
-        /* margin-right: 10%; */
-    }
+        margin-right: 10%;
+    } */
 
 }
 
 
 @media (min-width: 1024px) {
     .l-about {
-        
         display: flex;
         flex-direction: column;
         position: relative;
@@ -192,6 +268,7 @@
     }
 
     .l-about__hero {
+        z-index: 1;
         margin-left: 30%;
     }
 
@@ -199,12 +276,89 @@
         font-weight: normal;
     }
 
+
+
     .l-about__description {
-        width: 40%;
-        height: 175px;
-        padding: 60px 64px;
-        border: 1px solid #000000;
-        margin-bottom: 60px;
+        position: relative;
+        display: inline-block;
+        margin-top: -100px;
+        margin-bottom: 80px;
+        padding: 100px 0px 0px;
+        width: calc(100% - 120px);
+    }
+
+    .l-about__description::before,
+    .l-about__description::after,
+    .l-about__description span::before {
+        content: '';
+        position: absolute;
+        background-color: transparent;
+        transition: all 1.7s ease-in-out;
+        background-color: #000000;
+    }
+
+    .l-about__description::before,
+    .l-about__description::after {
+        width: 0;
+        height: 1px;
+    }
+
+    .l-about__description span::before {
+        width: 1px;
+        height: 0;
+    }
+
+    .l-about__description.scrolled::before {
+        animation: top-border 3s ease-in-out forwards;
+    }
+
+    .l-about__description.scrolled::after {
+        animation: bottom-border 1.7s ease-in-out forwards;
+    }
+
+    .l-about__description.scrolled span::before {
+        animation: right-border 1.7s ease-in-out forwards;
+    }
+
+    @keyframes top-border {
+        0% {
+            top: 0;
+            left: 0;
+            width: 0;
+        }
+        100% {
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+    }
+
+    @keyframes bottom-border {
+        0% {
+            right: 0;
+            width: 0;
+        }
+        100% {
+            right: 0;
+            width: 100%;
+        }
+    }
+
+    @keyframes right-border {
+        0% {
+            bottom: 0;
+            right: 0;
+            height: 0;
+        }
+        100% {
+            bottom: 0;
+            right: 0;
+            height: 100%;
+        }
+    }
+
+    .l-about__description p{
+        padding: 40px 44px;
         line-height: 22px;
     }
 

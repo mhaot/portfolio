@@ -246,7 +246,6 @@
     animation: right-border 1.7s ease-in-out forwards;
 }
 
-/* アニメーション設定 */
 @keyframes top-border {
     0% {
         top: 0;
@@ -289,8 +288,6 @@
     padding: 40px 44px;
     line-height: 22px;
 }
-
-
 
 
 .l-products__description p > button {
@@ -407,6 +404,7 @@
 
 
 .l-products__hero {
+    z-index: 1;
     margin-left: 30%;
 }
 
@@ -416,13 +414,89 @@
 }
 
 .l-products__description {
-    justify-self: start;
-    width: 40%;
-    height: 360px;
-    padding: 60px 64px;
-    border: 1px solid #000000;
+    position: relative;
+    display: inline-block;
+    margin-top: -100px;
+    margin-bottom: 80px;
+    padding: 100px 0px 0px;
+    width: calc(100% - 120px);
+}
+
+.l-products__description::before,
+.l-products__description::after,
+.l-products__description span::before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    transition: all 1.7s ease-in-out;
+    background-color: #000000;
+}
+
+.l-products__description::before,
+.l-products__description::after {
+    width: 0;
+    height: 1px;
+}
+
+.l-products__description span::before {
+    width: 1px;
+    height: 0;
+}
+
+
+.l-products__description.scrolled::before {
+    animation: top-border 3s ease-in-out forwards;
+}
+
+.l-products__description.scrolled::after {
+    animation: bottom-border 1.7s ease-in-out forwards;
+}
+
+.l-products__description.scrolled span::before {
+    animation: right-border 1.7s ease-in-out forwards;
+}
+
+@keyframes top-border {
+    0% {
+        top: 0;
+        left: 0;
+        width: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+@keyframes bottom-border {
+    0% {
+        right: 0;
+        width: 0;
+    }
+    100% {
+        right: 0;
+        width: 100%;
+    }
+}
+
+@keyframes right-border {
+    0% {
+        bottom: 0;
+        right: 0;
+        height: 0;
+    }
+    100% {
+        bottom: 0;
+        right: 0;
+        height: 100%;
+    }
+}
+
+
+.l-products__description p{
+    padding: 40px 44px;
     line-height: 22px;
-    margin-bottom: 60px;
 }
 
 
