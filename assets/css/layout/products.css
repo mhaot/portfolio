@@ -62,7 +62,6 @@
         animation: right-border 1.7s ease-in-out forwards;
     }
 
-    /* アニメーション設定 */
     @keyframes top-border {
         0% {
             top: 0;
