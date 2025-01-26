@@ -357,6 +357,19 @@
     }
 }
 
+@media (min-width: 1440px) {
+
+    .c-img__mainTopHero {
+        height: 800px;
+        aspect-ratio: 1 / 1;
+    }
+
+    .c-img__mainSubHero {
+        height: 500px;
+        aspect-ratio: 1 / 1;
+    }
+}
+
 
 /* title font-weight */
 .c-title__50 {

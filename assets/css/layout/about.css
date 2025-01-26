@@ -394,6 +394,27 @@
         padding-top: 8%;
     }
 
+
+    .l-about__hero picture p {
+        font-weight: normal;
+        font-size: 400%;
+    }
+    .l-about__hero picture p:nth-of-type(2) {
+        font-size: 150%;
     }
 
+    }
+
+
+    @media (min-width: 1440px) {
+
+        .l-about__list a {
+            height: 274px;
+        }
+
+        .l-about__menu {
+            margin: 0 14%;
+        }
+
+    }
 

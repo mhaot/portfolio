@@ -41,7 +41,7 @@
 }
 
 
-/* fade-in */
+/* fadein */
 
 .u-fadein {
     opacity: 0;
@@ -55,10 +55,36 @@
     transform: translateY(0);
 }
 
+
+/* u-slideinNav */
+    /* .u-slideinNav {
+    position: relative;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideinNav 1s ease-out forwards;
+    }
+
+    @keyframes slideinNav {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    } */
+
+
+
 @media (min-width: 769px) {
 
 .u-responsiveBr {
     display: none;
 }
+
+
+
+
 
 }

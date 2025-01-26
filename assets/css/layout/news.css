@@ -45,13 +45,21 @@
 }
 .l-news picture p {
     font-weight: normal;
-    font-size: 180%;
+    font-size: 310%;
 }
 
 .l-news picture p:nth-of-type(2) {
-    font-size: 90%;
+    font-size: 120%;
     margin-top: 2%;
 }
+
+}
+
+@media (min-width: 1440px) {
+
+    .l-news__description{
+        text-align: left;
+    }
 
 }
 

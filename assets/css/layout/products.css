@@ -591,6 +591,26 @@
     padding-top: 8%;
 }
 
-
+.l-products__hero picture p {
+    font-weight: normal;
+    font-size: 400%;
+}
+.l-products__hero picture p:nth-of-type(2) {
+    font-size: 150%;
 }
 
+
+
+
+}
+@media (min-width: 1440px) {
+
+    .l-products__list a {
+        height: 274px;
+    }
+
+    .l-products__menu {
+        margin: 0 14%;
+    }
+
+}

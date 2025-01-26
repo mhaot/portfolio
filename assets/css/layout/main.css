@@ -139,3 +139,12 @@
 
 
 }
+
+@media (min-width: 1440px) {
+
+    .l-main__sub {
+        text-align: center;
+    }
+
+}
+

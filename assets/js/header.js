@@ -7,7 +7,7 @@ export function initHeader() {
         { title: "BOSC TREEDAY 2024", subtitle: "BOSCとひのきの森の、美しい循環", link: "#", hasChevron: false },
         { title: "SKINCARE RENEWAL", subtitle: "スキンケア商品リニューアル", link: "#", hasChevron: false },
         { title: "ABOUT US", subtitle: "BOSCについて", link: "#", hasChevron: true },
-        { title: "BOSC MEMBERSSHIP", subtitle: "", link: "#", hasChevron: false }
+        { title: "BOSC MEMBERSSHIP", subtitle: "メンバーシップ", link: "#", hasChevron: false }
     ];
 
     function generateDrawerNav() {
@@ -79,11 +79,58 @@ export function initHeader() {
     setInterval(slideNews, 5000);
     });
 
-// if (window.innerWidth <= 320) {
-//     document.querySelectorAll('p').forEach(p => {
-//         // 「、」があったら改行を追加
-//         p.innerHTML = p.innerHTML.replace(/、/g, '、<br>');
-//     });
-//     }
+
+// .l-header__drawer
+document.addEventListener('DOMContentLoaded', () => {
+    const drawerBtn = document.querySelector('.l-header__drawer-btn'); // 開くボタン
+    const closeBtn = document.querySelector('.l-header__drawer-btn__close'); // 閉じるボタン
+    const drawer = document.querySelector('.l-header__drawer'); // ドロワー全体
+    const drawerInner = document.querySelector('.l-header__drawerInner'); // 背景部分
+    const overlay = document.querySelector('.l-header__overlay'); // オーバーレイ
+    const drawerTexts = document.querySelectorAll('.l-header__drawerText > *'); // テキスト
+    
+    // ドロワーを開く
+    function openDrawer() {
+      drawer.classList.add('is-active');
+      overlay.classList.add('is-active');
+      
+      // 背景をスライドイン
+      setTimeout(() => {
+        drawerInner.classList.add('is-visible'); // 背景表示
+      }, 500); // 背景のスライドイン時間（0.5秒）
+      
+      // 背景がスライドインした後にテキストを順番に表示
+      setTimeout(() => {
+        drawerTexts.forEach((text, index) => {
+          text.style.transitionDelay = `${index * 0.1}s`; // テキストごとの遅延
+          text.classList.add('is-visible'); // テキスト表示
+        });
+      }, 1500); // 背景スライドイン後、1.5秒後にテキスト表示
+    }
+    
+    // ドロワーを閉じる
+    function closeDrawer() {
+      drawer.classList.add('is-closing');  // 閉じるアニメーション用クラス
+      drawerInner.classList.add('is-closing');
+  
+      // 閉じるアニメーション完了後、クラスをリセット
+      setTimeout(() => {
+        drawer.classList.remove('is-active', 'is-closing');
+        overlay.classList.remove('is-active');
+        drawerInner.classList.remove('is-visible', 'is-closing');
+        
+        // テキストアニメーションをリセット
+        drawerTexts.forEach((text) => {
+          text.classList.remove('is-visible');
+          text.style.transitionDelay = '0s';
+        });
+      }, 500); // アニメーションが終わったタイミングでクラスをリセット
+    }
+  
+    // イベントリスナー登録
+    drawerBtn.addEventListener('click', openDrawer);
+    closeBtn.addEventListener('click', closeDrawer);
+    overlay.addEventListener('click', closeDrawer);
+  });
 
 }

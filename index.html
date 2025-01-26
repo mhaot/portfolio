@@ -26,50 +26,51 @@ rel="stylesheet">
       </ul>
     </div>
     <div class="l-header__bottom">
-        <input type="checkbox" id="drawer-toggle" />
-        <label for="drawer-toggle" class="l-header__drawer-btn">
-          <i class="c-deco__line"></i>
-          <i class="c-deco__line"></i>
-        </label>
-        <a href="#">
-          <h1 class="l-header__title c-title__22">BOSC</h1>
-        </a>
-        <div class="l-header__drawer">
-          <div class="l-header__drawerInner">
-            <h2 class="l-header__drawerTitle c-title__22">BOSC</h2>
-            <ul class="l-header__drawerNav--toc"></ul>
-            <div class="l-header__drawerBtns c-fs__12">
-              <button class="c-btn__square--login" onclick="location.href='#'">ログイン</button>
-              <button class="c-btn__square" onclick="location.href='#'">新規メンバー登録</button>
-            </div>
-            <nav class="l-header__drawerBottom c-fs__14">
-              <ul class="c-link__sns">
-                <li class="c-link__sns--instagram">
-                  <a href="#">instagram</a>
-                </li>
-                <li class="c-link__sns--X">
-                  <a href="#">X</a>
-                </li>
-                <li class="c-link__sns--youtube">
-                  <a href="#">youtube</a>
-                </li>
-              </ul>
-              <ul class="c-link__info">
-                <li class="c-link__info--faq">
-                  <a href="#">FAQ</a>
-                </li>
-                <li class="c-link__info--contact">
-                  <a href="#">お問い合わせ</a>
-                </li>
-                <li class="c-link__info--careers">
-                  <a href="#">採用情報</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
+      <button class="l-header__drawer-btn" type="button"></button>
+      <a href="#">
+        <h1 class="l-header__title c-title__22">BOSC</h1>
+      </a>
+    </div>
   </header>
+
+  <div class="l-header__drawer">
+    <div class="l-header__drawerInner">
+      <div class="l-header__drawerText">
+        <h2 class="l-header__drawerTitle c-title__22">BOSC</h2>
+        <ul class="l-header__drawerNav--toc"></ul>
+        <div class="l-header__drawerBtns c-fs__12">
+          <button class="c-btn__square--login" onclick="location.href='#'">ログイン</button>
+          <button class="c-btn__square" onclick="location.href='#'">新規メンバー登録</button>
+        </div>
+        <nav class="l-header__drawerBottom c-fs__14">
+          <ul class="c-link__sns">
+            <li class="c-link__sns--instagram">
+              <a href="#">instagram</a>
+            </li>
+            <li class="c-link__sns--X">
+              <a href="#">X</a>
+            </li>
+            <li class="c-link__sns--youtube">
+              <a href="#">youtube</a>
+            </li>
+          </ul>
+          <ul class="c-link__info">
+            <li class="c-link__info--faq">
+              <a href="#">FAQ</a>
+            </li>
+            <li class="c-link__info--contact">
+              <a href="#">お問い合わせ</a>
+            </li>
+            <li class="c-link__info--careers">
+              <a href="#">採用情報</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <button class="l-header__drawer-btn__close" type="button"></button>
+    </div>
+  </div>
+  <div class="l-header__overlay"></div>
 
   <main class="l-main">
     <div class="l-main__top">
@@ -317,7 +318,7 @@ rel="stylesheet">
       </li>
       <li class="c-link__info--careers">
         <a href="#">採用情報</a>
-      </li>
+      </li><br>
       <li class="c-link__info--faq">
         <a href="#">サイト利用規約</a>
       </li>
@@ -329,6 +330,7 @@ rel="stylesheet">
       </li>
     </ul>
   </nav>
+
   <small class="l-footer__copyright c-fs__10">Copyright© 2024 BOSC. All rights reserved.</small>
 </footer>
 <script type="module" src="assets/js/apps.js"></script>
