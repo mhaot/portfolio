@@ -113,6 +113,8 @@
 
 @media (min-width: 1024px) {
     .l-memberShip {
+        max-width: 1500px;
+        margin: 0 auto;
         margin-bottom: 80px;
         /* width: calc(100% - 300px); */
         display: flex;

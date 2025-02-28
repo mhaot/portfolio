@@ -261,6 +261,8 @@
 
 @media (min-width: 1024px) {
     .l-about {
+        max-width: 1500px;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         position: relative;
@@ -281,9 +283,9 @@
     .l-about__description {
         position: relative;
         display: inline-block;
-        margin-top: -100px;
+        margin-top: -150px;
         margin-bottom: 80px;
-        padding: 100px 0px 0px;
+        /* padding: 100px 0px 0px; */
         width: calc(100% - 120px);
     }
 
@@ -358,8 +360,11 @@
     }
 
     .l-about__description p{
-        padding: 40px 44px;
         line-height: 22px;
+        padding: 60px 64px;
+        width: 27.94985vw;
+        width: 360px;
+
     }
 
     .l-about__menu {

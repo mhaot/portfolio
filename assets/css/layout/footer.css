@@ -153,6 +153,8 @@
 @media (min-width: 1024px) {
 
 .l-footer {
+    max-width: 1500px;
+    margin: 0 auto;
     padding: 120px 0;
     text-align: center;
 }
