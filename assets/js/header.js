@@ -19,7 +19,7 @@ export function initHeader() {
         { title: "SCENT", subtitle: "香り", link: "#" },
         { title: "PACKAGE", subtitle: "パッケージ", link: "#" },
         { title: "SUSTAINABILITY", subtitle: "サステナビリティ", link: "#" },
-        { title: "DISCOVERY", subtitle: "BAUMの知見", link: "#" }
+        { title: "DISCOVERY", subtitle: "BOSCの知見", link: "#" }
     ]},
     { title: "BOSC MEMBERSSHIP", subtitle: "メンバーシップ", link: "#", hasChevron: false }
 ];
