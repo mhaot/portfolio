@@ -25,88 +25,84 @@ export function initHeader() {
 ];
 
 function generateDrawerNav() {
-  const navContainer = document.querySelector('.l-header__drawerNav--toc');
-  if (!navContainer) return;
+    const navContainer = document.querySelector('.l-header__drawerNav--toc');
+    if (!navContainer) return;
 
-  const fragment = document.createDocumentFragment();
+    const fragment = document.createDocumentFragment();
 
-  drawerItems.forEach(item => {
-      const listItem = document.createElement('li');
-      listItem.classList.add('l-header__drawerNav--tocItem');
+    drawerItems.forEach(item => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('l-header__drawerNav--tocItem');
 
-      const anchor = document.createElement('a');
-      anchor.href = item.link;
+        const anchor = document.createElement('a');
+        anchor.href = item.link;
 
-      const title = document.createElement('p');
-      title.classList.add('c-title__16');
-      title.textContent = item.title;
+        const title = document.createElement('p');
+        title.classList.add('c-title__16');
+        title.textContent = item.title;
 
-      const subtitle = document.createElement('p');
-      subtitle.classList.add('c-fs__10');
-      subtitle.textContent = item.subtitle;
+        const subtitle = document.createElement('p');
+        subtitle.classList.add('c-fs__10');
+        subtitle.textContent = item.subtitle;
 
-      anchor.appendChild(title);
-      anchor.appendChild(subtitle);
-      listItem.appendChild(anchor);
+        anchor.appendChild(title);
+        anchor.appendChild(subtitle);
+        listItem.appendChild(anchor);
 
-      let chevronIcon = null;
-      let subMenu = null;
-      if (item.hasChevron) {
-          chevronIcon = document.createElement('i');
-          chevronIcon.classList.add('c-deco__chevronDown');
-          listItem.appendChild(chevronIcon);
+        let chevronIcon = null;
+        let subMenu = null;
+        if (item.hasChevron) {
+            chevronIcon = document.createElement('i');
+            chevronIcon.classList.add('c-deco__chevronDown');
+            listItem.appendChild(chevronIcon);
 
-          if (item.subMenu) {
-              subMenu = document.createElement('div');
-              subMenu.classList.add('subMenu');
+            if (item.subMenu) {
+                subMenu = document.createElement('div');
+                subMenu.classList.add('subMenu');
 
-              item.subMenu.forEach(sub => {
-                  const subAnchor = document.createElement('a');
-                  subAnchor.href = sub.link;
+                item.subMenu.forEach(sub => {
+                    const subAnchor = document.createElement('a');
+                    subAnchor.href = sub.link;
 
-                  // <i class="c-deco__line"></i> を作成
-                  const lineDecoration = document.createElement('i');
-                  lineDecoration.classList.add('c-deco__line');
+                    const lineDecoration = document.createElement('i');
+                    lineDecoration.classList.add('c-deco__line');
 
-                  const subTitle = document.createElement('p');
-                  subTitle.classList.add('c-title__14');
-                  subTitle.textContent = sub.title;
+                    const subTitle = document.createElement('p');
+                    subTitle.classList.add('c-title__14');
+                    subTitle.textContent = sub.title;
 
-                  const subSubtitle = document.createElement('p');
-                  subSubtitle.classList.add('c-fs__10');
-                  subSubtitle.textContent = sub.subtitle;
+                    const subSubtitle = document.createElement('p');
+                    subSubtitle.classList.add('c-fs__10');
+                    subSubtitle.textContent = sub.subtitle;
 
-                  // <i class="c-deco__line"></i> を <a> タグの前に追加
-                  subAnchor.insertBefore(lineDecoration, subAnchor.firstChild);
+                    subAnchor.insertBefore(lineDecoration, subAnchor.firstChild);
 
-                  subAnchor.appendChild(subTitle);
-                  subAnchor.appendChild(subSubtitle);
-                  subMenu.appendChild(subAnchor);
-              });
+                    subAnchor.appendChild(subTitle);
+                    subAnchor.appendChild(subSubtitle);
+                    subMenu.appendChild(subAnchor);
+                });
 
-              listItem.appendChild(subMenu);
+                listItem.appendChild(subMenu);
 
-              chevronIcon.addEventListener("click", () => {
-                  // トグル表示
-                  if (listItem.classList.contains('open')) {
-                      listItem.classList.remove('open');
-                  } else {
-                      listItem.classList.add('open');
-                  }
-              });
-          }
-      }
+                chevronIcon.addEventListener("click", () => {
+                    if (listItem.classList.contains('open')) {
+                        listItem.classList.remove('open');
+                    } else {
+                        listItem.classList.add('open');
+                    }
+                });
+            }
+        }
 
-      fragment.appendChild(listItem);
-  });
+        fragment.appendChild(listItem);
+    });
 
-  navContainer.appendChild(fragment);
+    navContainer.appendChild(fragment);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  generateDrawerNav();
+    generateDrawerNav();
 });
-
 
 // .l-header__drawer
 document.addEventListener('DOMContentLoaded', () => {
