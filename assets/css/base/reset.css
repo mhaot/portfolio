@@ -70,6 +70,7 @@ textarea:not([rows]) {
     scroll-margin-block: 5ex;
 }
 button {
+    cursor: pointer;
     background: none;
     border-radius: 0;
     box-shadow: none;

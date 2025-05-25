@@ -152,4 +152,40 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.addEventListener('click', closeDrawer);
   });
 
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const newsItems = document.querySelectorAll('.l-header__news li');
+  let currentIndex = 0;
+
+  // 最初の <li> 要素に active クラスを追加
+  newsItems[currentIndex].classList.add('active');
+
+  function updateActiveClass() {
+    // 現在の <li> 要素から active クラスを削除し、exiting クラスを追加
+    newsItems[currentIndex].classList.remove('active');
+    newsItems[currentIndex].classList.add('exiting');
+
+    // 次の <li> 要素のインデックスを計算
+    currentIndex = (currentIndex + 1) % newsItems.length;
+
+    // 次の <li> 要素に active クラスを追加
+    newsItems[currentIndex].classList.add('active');
+
+    // 前の <li> 要素から exiting クラスを削除
+    setTimeout(() => {
+      newsItems[currentIndex].classList.remove('exiting');
+    }, 2000); // アニメーションの時間に合わせて調整
+  }
+
+  // 3秒ごとに updateActiveClass 関数を実行
+  setInterval(updateActiveClass, 3000);
+});
+
+
+
 }
